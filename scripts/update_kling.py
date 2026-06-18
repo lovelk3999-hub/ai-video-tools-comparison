@@ -1,21 +1,103 @@
-﻿import json
-with open("E:\\ai\\program\\google seo web\\ai-video-tools-comparison\\data\\tools.json", "r", encoding="utf-8-sig") as f:
-    d = json.load(f)
-m = {t["id"]: t for t in d["tools"]}
+﻿"""
+Kling Pricing Scraper - persistent browser login (douyin-index pattern)
+"""
+import asyncio, json, re, os, sys
+from datetime import datetime
+from playwright.async_api import async_playwright
 
-k = m["kling"]
-k["plans"] = [
-    {"name": "Free", "price_monthly": 0, "price_yearly": 0, "credits": "128 inspiration pts/mo (login)", "resolution": "480p", "video_length": "5 sec", "features": ["128 free pts/mo", "480p export", "30 creations limit", "Watermark", "No commercial use"]},
-    {"name": "Gold", "price_monthly": 8, "price_yearly": None, "credits": "660 inspiration pts/mo", "resolution": "1080p", "video_length": "30 sec", "features": ["660 pts/mo (~$8)", "1080p export", "No watermark", "Fast queue", "Commercial use"]},
-    {"name": "Platinum", "price_monthly": 33, "price_yearly": None, "credits": "3000 inspiration pts/mo", "resolution": "1080p", "video_length": "3 min", "features": ["3000 pts/mo (~$33)", "1080p export (4K available)", "Fastest queue", "Video extension", "Image enhance"]},
-    {"name": "Diamond", "price_monthly": 81, "price_yearly": None, "credits": "8000 inspiration pts/mo", "resolution": "1080p", "video_length": "3 min", "features": ["8000 pts/mo (~$81)", "Priority queue", "New features first", "All perks"]},
-    {"name": "Black Gold", "price_monthly": 160, "price_yearly": None, "credits": "26000 inspiration pts/mo", "resolution": "1080p+", "video_length": "3 min", "features": ["26000 pts/mo (~$160)", "All features", "Limited beta access", "Highest priority"]}
-]
-k["description"] = "Kuaishou's state-of-the-art AI video generation platform with powerful text-to-video and image-to-video capabilities. One of the leading AI video platforms with competitive per-use pricing model."
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+USER_DATA_DIR = os.path.join(BASE_DIR, ".kling_browser")
+TOOLS_JSON = os.path.normpath(os.path.join(BASE_DIR, "..", "data", "tools.json"))
+MEMBERSHIP_URL = "https://klingai.com/app/membership/membership-plan?r=33&f=1"
+FX = 7.2
 
-with open("E:\\ai\\program\\google seo web\\ai-video-tools-comparison\\data\\tools.json", "w", encoding="utf-8") as f:
-    json.dump(d, f, ensure_ascii=False, indent=2)
+def load():
+    with open(TOOLS_JSON, encoding="utf-8") as f:
+        return json.load(f)
 
-print("Kling pricing updated based on actual subscription page!")
-for p in k["plans"]:
-    print(f"  {p['name']}: ${p['price_monthly']}/mo - {p['credits']}")
+def save(data):
+    data["updated"] = datetime.now().strftime("%Y-%m-%d")
+    with open(TOOLS_JSON, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+def parse(text):
+    """Extract monthly prices from Kling membership page."""
+    # Gold/Platinum/Diamond: "后续每月 58元"
+    regular_prices = [int(m.group(1)) for m in re.finditer(r"后续每月\s*(\d+)\s*元", text)]
+    # Black Gold: "续费金额：1149元" or "续费金额: 1149元"
+    bg_prices = [int(m.group(1)) for m in re.finditer(r"续费金额[：:]\s*(\d+)\s*元", text)]
+    
+    print(f"  Regular monthly prices: {regular_prices}")
+    print(f"  Black Gold prices: {bg_prices}")
+    
+    result = {"Free": {"price_monthly": 0}}
+    
+    plan_order = [("Gold", 660), ("Platinum", 3000), ("Diamond", 8000)]
+    for i, (name, credits) in enumerate(plan_order):
+        if i < len(regular_prices):
+            usd = int(regular_prices[i] / FX + 0.5)
+            print(f"    {name}: {regular_prices[i]} CNY -> ${usd}/mo")
+            result[name] = {"price_monthly": usd, "credits": f"{credits} pts/mo"}
+    
+    if bg_prices:
+        usd = int(bg_prices[0] / FX + 0.5)
+        print(f"    Black Gold: {bg_prices[0]} CNY -> ${usd}/mo")
+        result["Black Gold"] = {"price_monthly": usd, "credits": "26000 pts/mo"}
+    
+    return result
+
+
+async def main():
+    print("=== Kling Pricing Scraper ===")
+    first = not os.path.exists(USER_DATA_DIR)
+    
+    async with async_playwright() as pw:
+        browser = await pw.chromium.launch_persistent_context(
+            USER_DATA_DIR, headless=not first,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
+        page = browser.pages[0] if browser.pages else await browser.new_page()
+        
+        if first:
+            print("\nFIRST RUN: Log in manually (120s)\n")
+            await page.goto("https://klingai.com/app", timeout=60000)
+            for i in range(120):
+                await page.wait_for_timeout(1000)
+                if "login" not in page.url.lower() and "auth" not in page.url.lower():
+                    print("Logged in!")
+                    break
+                if i % 10 == 0: print(f"  Waiting {i+1}s")
+            else:
+                print("Timeout")
+                await browser.close()
+                return
+        
+        await page.goto(MEMBERSHIP_URL, wait_until="load", timeout=30000)
+        await page.wait_for_timeout(3000)
+        text = await page.inner_text("body")
+        parsed = parse(text)
+        
+        data = load()
+        tool = next((t for t in data["tools"] if t["id"] == "kling"), None)
+        if tool:
+            changes = 0
+            for pn, pd in parsed.items():
+                for ep in tool["plans"]:
+                    if ep["name"].lower().startswith(pn.lower()):
+                        old = ep.get("price_monthly")
+                        new = pd.get("price_monthly")
+                        if old != new and new is not None:
+                            ep["price_monthly"] = new
+                            changes += 1
+                            print(f"  {pn}: ${old} -> ${new}")
+                        break
+            if changes:
+                save(data)
+                print(f"\n{changes} change(s)")
+            else:
+                print("\nNo changes")
+        
+        await browser.close()
+
+if __name__ == "__main__":
+    asyncio.run(main())

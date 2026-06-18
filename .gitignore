@@ -11,3 +11,7 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Browser profiles
+.kling_browser/
+scripts/.kling_browser/
