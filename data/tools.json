@@ -1138,6 +1138,54 @@
     {
       "q": "Do these tools offer API access?",
       "a": "HeyGen, Synthesia, Runway, and Kling offer API access (usually on Business/Enterprise plans). Pika has limited API. Sora does not currently offer public API access."
+    },
+    {
+      "q": "What is the difference between text-to-video and avatar tools?",
+      "a": "Text-to-video tools (like Runway, Pika, Kling, Seedance) generate video scenes from text prompts - ideal for creating B-roll, cinematic clips, and animations. Avatar tools (like HeyGen, Synthesia, D-ID, Colossyan) create talking-head videos with digital humans - perfect for presentations, training, and marketing content. Some platforms now offer both capabilities."
+    },
+    {
+      "q": "Which AI video tool supports the longest video generation?",
+      "a": "Seedance supports up to 1-hour+ video generation with its advanced models. Most other tools generate clips of 5-60 seconds per generation, though some allow frame-by-frame extension for longer content. Invideo AI can generate full-length videos by chaining multiple clips together."
+    },
+    {
+      "q": "Do Chinese AI video tools (Kling, HailuoAI, Vidu) work in English?",
+      "a": "Yes. Most Chinese AI video tools like Kling, HailuoAI, and Vidu support English prompts and interfaces. However, some pricing is in CNY (Chinese Yuan) and may require Chinese payment methods. Credit card acceptance varies by platform."
+    },
+    {
+      "q": "What is credit-based pricing and how does it work?",
+      "a": "Most AI video tools use a credit system: you buy a monthly subscription that includes a fixed number of credits. Each video generation consumes credits based on duration, resolution, and model quality. Free plans offer limited credits for testing. Unused credits may roll over depending on the plan."
+    },
+    {
+      "q": "Which AI video tool has the best video quality?",
+      "a": "Quality varies by use case. For cinematic realism: Runway Gen-4 and Luma Dream Machine lead. For Chinese-language content: HailuoAI and Kling produce top-tier results. For avatar realism: HeyGen and Synthesia are industry leaders. We recommend testing free plans to compare quality for your specific needs."
+    },
+    {
+      "q": "Can I use AI-generated videos for commercial projects?",
+      "a": "Most paid plans include commercial usage rights. Free plans often have restrictions or watermarks. Always check the specific tool's terms of service - some require attribution, while others grant full commercial rights. Enterprise plans typically include the most flexible licensing."
+    },
+    {
+      "q": "Which AI video tool is best for beginners?",
+      "a": "For text-to-video beginners: Invideo AI and Pika offer the most intuitive interfaces. For avatar videos: HeyGen and Synthesia have user-friendly templates. CapCut is excellent for those familiar with video editing. Most tools offer free trials to help you get started without commitment."
+    },
+    {
+      "q": "Do I need a powerful computer to use AI video tools?",
+      "a": "No. All major AI video tools are cloud-based - you only need a web browser and internet connection. The AI processing happens on remote servers. A stable internet connection (10+ Mbps) is recommended for uploading reference images and downloading generated videos."
+    },
+    {
+      "q": "What are the differences between free and paid AI video plans?",
+      "a": "Free plans typically include: limited monthly credits, watermarked output, standard resolution (720p), and basic models. Paid plans ($10-100+/month) offer: more credits, HD/4K export, watermark-free videos, priority processing, advanced models, and commercial usage rights."
+    },
+    {
+      "q": "Which AI video tools offer API access for developers?",
+      "a": "Most major platforms offer API access: Runway, Synthesia, HeyGen, D-ID, HailuoAI, and Kling provide developer APIs for integration. Pricing is typically usage-based or requires an Enterprise plan. API access is ideal for automating video production workflows."
+    },
+    {
+      "q": "How often do AI video tools update their models?",
+      "a": "Major AI video tools release significant model updates every 2-6 months. Runway released Gen-4.5 in 2026, Kling went from 1.0 to 3.0, and Seedance from 1.0 to 2.0 within a year. Following official YouTube channels is the best way to stay updated on new features."
+    },
+    {
+      "q": "What is the best AI video tool for social media content?",
+      "a": "For short-form social media (TikTok, Reels, Shorts): CapCut, Invideo AI, and Pika excel with ready-made templates. For YouTube content: Runway and Luma offer higher quality. For business social media: HeyGen and Synthesia create professional avatar-based content easily."
     }
   ]
 }
