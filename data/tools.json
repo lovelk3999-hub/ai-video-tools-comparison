@@ -99,8 +99,28 @@
         "screen_recording": true,
         "template_library": true
       },
-      "g2_rating": 4.7,
-      "g2_reviews": "350+"
+      "g2_rating": 4.8,
+      "g2_reviews": "1831 verified",
+      "reddit_posts": [
+        {
+          "title": "Warning about HeyGen – Misleading AI Dub Service and Dishonest ...",
+          "snippet": "I'm posting this as a warning to anyone considering using HeyGen for AI dubbing. If you're looking for a reliable service, I strongly suggest avoiding",
+          "url": "https://www.reddit.com/r/aiwars/comments/1jwlqm7/warning_about_heygen_misleading_ai_dub_service/",
+          "date": "Apr 11, 2025"
+        },
+        {
+          "title": "Anyone here actually using Heygen? Looking for honest feedback ...",
+          "snippet": "Heygen is great if you want a commercial tool that doesn't involve a lot of work. The downside is you're limited to their avatars and guardrails ...",
+          "url": "https://www.reddit.com/r/heygen/comments/1o2qbcz/anyone_here_actually_using_heygen_looking_for/",
+          "date": "Oct 10, 2025"
+        },
+        {
+          "title": "Used HeyGen as a real video studio for a few weeks. Here's how it ...",
+          "snippet": "Reusable avatars actually hold up Once an avatar is set, it stays visually consistent across videos. No weird drift in face shape or framing,",
+          "url": "https://www.reddit.com/r/heygen/comments/1q6r3cp/used_heygen_as_a_real_video_studio_for_a_few/",
+          "date": "Jan 7, 2026"
+        }
+      ]
     },
     {
       "id": "synthesia",
@@ -184,7 +204,27 @@
         "template_library": true
       },
       "g2_rating": 4.6,
-      "g2_reviews": "500+"
+      "g2_reviews": "2759 verified",
+      "reddit_posts": [
+        {
+          "title": "What are your experiences using Synthesia? : r/instructionaldesign",
+          "snippet": "It's ok, kinda useful tool for creating talking heads for a video. But their voiceovers are not too good.",
+          "url": "https://www.reddit.com/r/instructionaldesign/comments/1k0bhoz/what_are_your_experiences_using_synthesia/",
+          "date": "Apr 16, 2025"
+        },
+        {
+          "title": "what are your experiences using Synthesia : r/instructionaldesign",
+          "snippet": "Synthesia: Best for learner experience. It offers the best navigation, chaptering, and playback controls. Key Feature: Both scored high on ...",
+          "url": "https://www.reddit.com/r/instructionaldesign/comments/1qb9oq7/what_are_your_experiences_using_synthesia/",
+          "date": "Jan 12, 2026"
+        },
+        {
+          "title": "Synthesia Avatars - Thoughts? : r/instructionaldesign - Reddit",
+          "snippet": "I find them super distracting and ineffective as the mouth movement does not match the actual script as people we tend to look at the mouth when peopl",
+          "url": "https://www.reddit.com/r/instructionaldesign/comments/1aukccp/synthesia_avatars_thoughts/",
+          "date": "Feb 19, 2024"
+        }
+      ]
     },
     {
       "id": "runway",
@@ -288,8 +328,28 @@
         "audio_gen": true,
         "api": true
       },
-      "g2_rating": 4.5,
-      "g2_reviews": "200+"
+      "g2_rating": 4.8,
+      "g2_reviews": "38 verified",
+      "reddit_posts": [
+        {
+          "title": "Is Runway Ai Worth it? : r/runwayml - Reddit",
+          "snippet": "It's an absolute Scam. It also has very cool free AI tools that works great, but it's not the best choice if you are after creating AI video.",
+          "url": "https://www.reddit.com/r/runwayml/comments/1hjuqft/is_runway_ai_worth_it/",
+          "date": "Dec 22, 2024"
+        },
+        {
+          "title": "Which All-in-One AI Platform Will Stand Out in 2026: Runway ML vs ...",
+          "snippet": "Runway ML excels in professional, cinematic-level output, making it an ideal choice for directors and studios. • iMini AI democratizes video and ...",
+          "url": "https://www.reddit.com/r/AIAssisted/comments/1ondjdd/which_allinone_ai_platform_will_stand_out_in_2026/",
+          "date": "Nov 3, 2025"
+        },
+        {
+          "title": "Gen-4 honest opinion! Disappointing but better than nothing - Reddit",
+          "snippet": "It has a steep learning curve and most people fail to get what they want but once you get the hang of it you become unstoppable. Runway ...",
+          "url": "https://www.reddit.com/r/runwayml/comments/1jor1t4/gen4_honest_opinion_disappointing_but_better_than/",
+          "date": "Apr 1, 2025"
+        }
+      ]
     },
     {
       "id": "pika",
@@ -367,8 +427,28 @@
         "lip_sync": true,
         "extend": true
       },
-      "g2_rating": 4.3,
-      "g2_reviews": "100+"
+      "g2_rating": 4.5,
+      "g2_reviews": "G2",
+      "reddit_posts": [
+        {
+          "title": "Pika v1.0 AI : r/vfx - Reddit",
+          "snippet": "This is literally technology designed to remove artists from the creative process so companies can slash their operating costs.",
+          "url": "https://www.reddit.com/r/vfx/comments/186qlvd/pika_v10_ai/",
+          "date": "Nov 29, 2023"
+        },
+        {
+          "title": "r/pika_ai - Reddit",
+          "snippet": "Killed a bunch of weird AI glitches and sudden scene swaps. ⸻. Stuff I learned the hard way: • Stick to vertical shots in Pika unless you like frustra",
+          "url": "https://www.reddit.com/r/pika_ai/",
+          "date": ""
+        },
+        {
+          "title": "Hello everyone, what is the best AI video generator here? I tried 15 ...",
+          "snippet": "Opinion-based comparison ; 6.Pika Labs 2.5, Pika, Budget-friendly, great value/performance, 480p-4K output ; 7.Hailuo Minimax, Hailuo, Template- ...",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1qrq2ks/hello_everyone_what_is_the_best_ai_video/",
+          "date": "Jan 31, 2026"
+        }
+      ]
     },
     {
       "id": "sora",
@@ -435,10 +515,30 @@
         "storyboard": true,
         "api": false
       },
-      "g2_rating": 4.2,
-      "g2_reviews": "50+",
+      "g2_rating": 4.6,
+      "g2_reviews": "2698 verified",
       "status": "discontinued",
-      "discontinued_note": "Discontinued April 26, 2026. Sora API sunset September 24, 2026."
+      "discontinued_note": "Discontinued April 26, 2026. Sora API sunset September 24, 2026.",
+      "reddit_posts": [
+        {
+          "title": "It's insane how badly they've ruined SORA 2 already - Reddit",
+          "snippet": "What shocks me is not that they reduced its quality, but how quickly and blatantly they did it. OpenAI clearly doesn't care anymore. the model ...",
+          "url": "https://www.reddit.com/r/OpenAI/comments/1o3334f/its_insane_how_badly_theyve_ruined_sora_2_already/",
+          "date": "Oct 10, 2025"
+        },
+        {
+          "title": "What's going on with OpenAI's Sora shutting down? : r/OutOfTheLoop",
+          "snippet": "OpenAI is wanting to do an IPO soon. A big part of an IPO is you open your financials up so investors can know what they're getting into. Sora, ...",
+          "url": "https://www.reddit.com/r/OutOfTheLoop/comments/1s2u847/whats_going_on_with_openais_sora_shutting_down/",
+          "date": "Mar 24, 2026"
+        },
+        {
+          "title": "r/SoraAi - Reddit",
+          "snippet": "Open AI nearly got bankrupt because of Sora. They Don't Have The Same Taste And Quality As Sora. They Are Pretty Basic, Sora Was Cancelled For ...",
+          "url": "https://www.reddit.com/r/SoraAi/",
+          "date": "Feb 15, 2024"
+        }
+      ]
     },
     {
       "id": "kling",
@@ -538,7 +638,27 @@
         "multi_language": true
       },
       "g2_rating": 4.0,
-      "g2_reviews": "30+"
+      "g2_reviews": "30+",
+      "reddit_posts": [
+        {
+          "title": "I Tried Kling AI for Free Is This the Most Powerful AI Video Generator ...",
+          "snippet": "Best AI Humanizer Tool in 2026 (Bypasses Turnitin) Best AI Detector in 2026 (most similar to Turnitin)",
+          "url": "https://www.reddit.com/r/it/comments/1t1b6i5/i_tried_kling_ai_for_free_is_this_the_most/",
+          "date": "May 2, 2026"
+        },
+        {
+          "title": "Kling AI 2.6 Just Dropped: First Text to Video Model With Built-in ...",
+          "snippet": "524 votes, 81 comments. Kling AI just launched Kling 2.6 and it's no longer silent video AI. • Native audio + visuals in one generation.",
+          "url": "https://www.reddit.com/r/singularity/comments/1pd7e5t/kling_ai_26_just_dropped_first_text_to_video/",
+          "date": "Dec 3, 2025"
+        },
+        {
+          "title": "r/KLING - Reddit",
+          "snippet": "Unofficial reddit community for <b>Kling AI</b>. 10 minute animated ai video created with Kling. Omni and elements do a very fine job at most ...",
+          "url": "https://www.reddit.com/r/KLING/",
+          "date": "Jun 7, 2024"
+        }
+      ]
     },
     {
       "id": "invideo",
@@ -625,8 +745,28 @@
         "api": true,
         "multi_model": true
       },
-      "g2_rating": 4.5,
-      "g2_reviews": "100+"
+      "g2_rating": 4.4,
+      "g2_reviews": "173 verified",
+      "reddit_posts": [
+        {
+          "title": "Invideo AI Review - I am no longer a customer and here is why.",
+          "snippet": "The platform is way harder to use than advertised. The editing interface is confusing, and the videos it generates are low quality and often don ...",
+          "url": "https://www.reddit.com/r/videography/comments/1qpvs9f/invideo_ai_review_i_am_no_longer_a_customer_and/",
+          "date": "Jan 29, 2026"
+        },
+        {
+          "title": "Hello everyone, what is the best AI video generator here? I tried 15 ...",
+          "snippet": "Opinion-based comparison ; 8.InVideo AI, InVideo, Text-to-video, trend templates, multi-format, YouTube, Blog-to-Video, Quick Explainers, ~$20-60 ...",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1qrq2ks/hello_everyone_what_is_the_best_ai_video/",
+          "date": "Jan 31, 2026"
+        },
+        {
+          "title": "Invideo.ai. What a SCAM!!! read this before you sign up - Reddit",
+          "snippet": "This feels extremely misleading and borderline scammy. No user should lose credits without a clear prompt or confirmation. It's not transparent, ...",
+          "url": "https://www.reddit.com/r/VideoEditing/comments/1okj9eb/invideoai_what_a_scam_read_this_before_you_sign_up/",
+          "date": "Oct 31, 2025"
+        }
+      ]
     },
     {
       "id": "capcut",
@@ -707,8 +847,28 @@
         "mobile_editor": true,
         "desktop_editor": true
       },
-      "g2_rating": 4.5,
-      "g2_reviews": "5000+"
+      "g2_rating": 4.6,
+      "g2_reviews": "41 verified",
+      "reddit_posts": [
+        {
+          "title": "CapCut IS DONE. - Reddit",
+          "snippet": "I actually dislike having to pay China for using all the features of CapCut, that's my own personal stance. However, it's extremely powerful and ...",
+          "url": "https://www.reddit.com/r/CapCut/comments/1ptp1uw/capcut_is_done/",
+          "date": "Dec 23, 2025"
+        },
+        {
+          "title": "Official CapCut Team: Community Survey - Reddit",
+          "snippet": "The massive library of drag and drop complex transitions, fx, animations that CapCut pro offers… $20/month is a steal. Stuff that would have ...",
+          "url": "https://www.reddit.com/r/CapCut/comments/1powlqa/official_capcut_team_community_survey/",
+          "date": "Dec 17, 2025"
+        },
+        {
+          "title": "Wtf happened with CapCut? - Reddit",
+          "snippet": "You get used to their app, capcut. Use it as your main editing platform/app, you earn money, you progress, they release new features and the ...",
+          "url": "https://www.reddit.com/r/CapCut/comments/1r9hrry/wtf_happened_with_capcut/",
+          "date": "Feb 20, 2026"
+        }
+      ]
     },
     {
       "id": "colossyan",
@@ -794,7 +954,27 @@
         "interactive_video": true
       },
       "g2_rating": 4.6,
-      "g2_reviews": "200+"
+      "g2_reviews": "492 verified",
+      "reddit_posts": [
+        {
+          "title": "Hello everyone, what is the best AI video generator here? I tried 15 ...",
+          "snippet": "Free with limits, paid upgrade available, Yes (10/day). 12.Colossyan, Colossyan, Interactive training, scenario-based learning, Corporate ...",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1qrq2ks/hello_everyone_what_is_the_best_ai_video/",
+          "date": "Jan 31, 2026"
+        },
+        {
+          "title": "What are your experiences using Synthesia? : r/instructionaldesign",
+          "snippet": "It's ok, kinda useful tool for creating talking heads for a video. But their voiceovers are not too good.",
+          "url": "https://www.reddit.com/r/instructionaldesign/comments/1k0bhoz/what_are_your_experiences_using_synthesia/",
+          "date": "Apr 16, 2025"
+        },
+        {
+          "title": "Yes, I tried 18 AI Video generators, so you don't have to - Reddit",
+          "snippet": "Colossyan, Colossyan, Interactive training, scenario-based learning, Corporate Training, eLearning, ~$28-100+/month, Yes (limited). 14.revid AI ...",
+          "url": "https://www.reddit.com/r/aipromptprogramming/comments/1qhkhbj/yes_i_tried_18_ai_video_generators_so_you_dont/",
+          "date": "Jan 20, 2026"
+        }
+      ]
     },
     {
       "id": "seedance",
@@ -859,6 +1039,26 @@
             "All Premium features"
           ]
         }
+      ],
+      "reddit_posts": [
+        {
+          "title": "Honest take on Seedance 2.0 downsides : r/generativeAI - Reddit",
+          "snippet": "Product shots and ads with real objects? Not great. Other models handle this way better. 4.It's the most expensive AI video model out there.",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1snolwf/honest_take_on_seedance_20_downsides/",
+          "date": "Apr 17, 2026"
+        },
+        {
+          "title": "Some thoughts on Dreamina Seedance 2.0 and why these updates ...",
+          "snippet": "In my experience, Seedance 2.0 is great for total control and exact camera moves. It works much better for complex actions and creative ...",
+          "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1s45evl/some_thoughts_on_dreamina_seedance_20_and_why/",
+          "date": "Mar 26, 2026"
+        },
+        {
+          "title": "My real experience with Dreamina Seedance 2.0: Is it the future of ...",
+          "snippet": "I found that Seedance 2.0 is very smart at handling lip sync and background sound effects. If you need to make social media videos with ...",
+          "url": "https://www.reddit.com/r/seedance/comments/1s53xm8/my_real_experience_with_dreamina_seedance_20_is/",
+          "date": "Mar 27, 2026"
+        }
       ]
     },
     {
@@ -919,6 +1119,26 @@
             "API access"
           ]
         }
+      ],
+      "reddit_posts": [
+        {
+          "title": "Why does Hailuo AI look so bad? : r/HailuoAiOfficial - Reddit",
+          "snippet": "Hailuo has been more of a roll the dice situation. Some animations are flat out gorgeous while many others useing the exact same image to video ...",
+          "url": "https://www.reddit.com/r/HailuoAiOfficial/comments/1j2r7wq/why_does_hailuo_ai_look_so_bad/",
+          "date": "Mar 3, 2025"
+        },
+        {
+          "title": "Hello everyone, what is the best AI video generator here? I tried 15 ...",
+          "snippet": "I've tried most of these generators. Each one has its own advantages, but my top picks are Veo, Sora , Kling, and Hailuo. The others ...",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1qrq2ks/hello_everyone_what_is_the_best_ai_video/",
+          "date": "Jan 31, 2026"
+        },
+        {
+          "title": "Testing 18 Video Tools: Why Hailuo Minimax is the only one not ...",
+          "snippet": "If you're doing marketing, Hailuo Minimax is consistently delivering the most coherent motion without the weird limb-melting artifacts. I've ...",
+          "url": "https://www.reddit.com/r/aipromptprogramming/comments/1r4pf7b/testing_18_video_tools_why_hailuo_minimax_is_the/",
+          "date": "Feb 14, 2026"
+        }
       ]
     },
     {
@@ -928,8 +1148,8 @@
       "category": "video-gen",
       "url": "https://lumalabs.ai/dream-machine",
       "logo_url": "",
-      "g2_rating": "4.2",
-      "g2_reviews": "150+",
+      "g2_rating": 5.0,
+      "g2_reviews": "1 verified",
       "youtube_official": [
         {
           "title": "Introducing Luma Dream Machine - Next Generation AI Video",
@@ -990,6 +1210,26 @@
             "EXR export"
           ]
         }
+      ],
+      "reddit_posts": [
+        {
+          "title": "Has anybody had experience with Luma Labs “Dream Machine” AI ...",
+          "snippet": "I just bought a subscription. Video generation with it is hit and miss with uneven results. I've done 14 runs so far with images as prompts. The ...",
+          "url": "https://www.reddit.com/r/lumalabsai/comments/1dhmi8h/has_anybody_had_experience_with_luma_labs_dream/",
+          "date": "Jun 17, 2024"
+        },
+        {
+          "title": "r/webflow on Reddit: I just recreated the Lumalabs Dream Machine ...",
+          "snippet": "I wanted to share with you a project I've been working on over the last few weeks: I've recreated Luma's Dream Machine landing page using my ...",
+          "url": "https://www.reddit.com/r/webflow/comments/1nv8z4a/i_just_recreated_the_lumalabs_dream_machine/",
+          "date": "Oct 1, 2025"
+        },
+        {
+          "title": "Review of the new Luma video model : r/singularity - Reddit",
+          "snippet": "33 votes, 10 comments. I'm pretty unimpressed so far. Image-to-video is okay, and text-to-video is really unimpressive in my usage so far.",
+          "url": "https://www.reddit.com/r/singularity/comments/1deiswr/review_of_the_new_luma_video_model/",
+          "date": "Jun 12, 2024"
+        }
       ]
     },
     {
@@ -999,8 +1239,8 @@
       "category": "video-gen",
       "url": "https://www.vidu.studio",
       "logo_url": "",
-      "g2_rating": "",
-      "g2_reviews": "",
+      "g2_rating": 4.9,
+      "g2_reviews": "14",
       "youtube_official": [],
       "youtube_reviews": [],
       "features": {
@@ -1044,6 +1284,26 @@
             "All features"
           ]
         }
+      ],
+      "reddit_posts": [
+        {
+          "title": "Best AI music video generator in 2026? : r/ArtificialInteligence - Reddit",
+          "snippet": "It's not perfect, and I'm still exploring what it's best suited for, but for quickly turning music into short-form videos, it's been a useful ...",
+          "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1qhp9bf/best_ai_music_video_generator_in_2026/",
+          "date": "Jan 20, 2026"
+        },
+        {
+          "title": "What AI Tools Are Actually Worth Using for Long-Form Content?",
+          "snippet": "The results have been surprisingly practical: AI can surface multiple clip candidates from long videos based on transcripts and context.",
+          "url": "https://www.reddit.com/r/podcasting/comments/1qo8ftd/video_editing_in_2026_what_ai_tools_are_actually/",
+          "date": "Jan 27, 2026"
+        },
+        {
+          "title": "Hello everyone, what is the best AI video generator here? I tried 15 ...",
+          "snippet": "2026 best ai video generator tools. -friendly, great value/performance, 91 Revid AI Reviews. Honest User Experiences, Features, Pricing, Pros & ...",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1qrq2ks/hello_everyone_what_is_the_best_ai_video/",
+          "date": "Jan 31, 2026"
+        }
       ]
     },
     {
@@ -1053,8 +1313,8 @@
       "category": "avatar",
       "url": "https://www.d-id.com",
       "logo_url": "",
-      "g2_rating": "4.5",
-      "g2_reviews": "200+",
+      "g2_rating": 4.6,
+      "g2_reviews": "117 verified",
       "youtube_official": [
         {
           "title": "V4 Expressive Avatars are LIVE in D-ID studio!",
@@ -1104,6 +1364,26 @@
             "Dedicated support",
             "API access"
           ]
+        }
+      ],
+      "reddit_posts": [
+        {
+          "title": "Just did an analysis on ICLR 2025 vs 2026 scores and WOW [D]",
+          "snippet": "in my current project I am seeing a much lower corr for ICLR 2026. 2026 avg-score SD: 1.162, mean within-paper human ・ little proper oversight ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1sj76a2/just_did_an_analysis_on_iclr_2025_vs_2026_scores/",
+          "date": "Apr 12, 2026"
+        },
+        {
+          "title": "2026 NYC Food Trip Review how did I do overall……..? - Reddit",
+          "snippet": "Best bite of the trip, hands down. Best cheesesteak I've ever had. Fish Cheeks: 10/10. The red crab curry and crab fried rice are top-tier.",
+          "url": "https://www.reddit.com/r/FoodNYC/comments/1tcon2c/2026_nyc_food_trip_review_how_did_i_do_overall/",
+          "date": "May 14, 2026"
+        },
+        {
+          "title": "[D] AAAI 2026: Why did some papers get 3 human reviewers in ...",
+          "snippet": "The target was to get 3 reviews per paper, but there were some reviewers who did not submit on time or respond to requests to submit before ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1nk1b7o/d_aaai_2026_why_did_some_papers_get_3_human/",
+          "date": "Sep 18, 2025"
         }
       ]
     }

@@ -158,6 +158,18 @@ def generate_tool_page(t):
             embeds.append(h1)
         video_section = '<h2 style="margin-top:32px;">Official Video</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin:16px 0;">' + ''.join(embeds) + '</div>'
     
+    # Reddit discussions section
+    reddit_section = ""
+    if t.get("reddit_posts"):
+        cards = ""
+        for p in t["reddit_posts"]:
+            title = p.get("title", "").replace("\"", "&quot;")
+            snippet = p.get("snippet", "")[:200].replace("\"", "&quot;")
+            url = p.get("url", "#").replace("\"", "&quot;")
+            date = p.get("date", "")
+            cards += f'<div style="background:white;border-radius:8px;padding:14px 16px;box-shadow:0 1px 2px rgba(0,0,0,0.05);border:1px solid #e2e8f0;"><h4 style="font-size:14px;margin-bottom:4px;"><a href="{url}" rel="nofollow noopener" target="_blank" style="color:#1e40af;text-decoration:none;">{title}</a></h4><p style="font-size:12px;color:#64748b;margin-top:4px;margin-bottom:4px;">{snippet}</p><span style="font-size:11px;color:#94a3b8;">{date}</span></div>'
+        reddit_section = f'<h2 style="margin-top:32px;">Reddit Discussions</h2><div style="display:grid;gap:12px;margin:16px 0;">{cards}</div>'
+    
     content = f"""
 <section class="hero">
     <div class="container">
@@ -171,7 +183,8 @@ def generate_tool_page(t):
     <h2 style="margin-top:32px;">✨ Key Features</h2>
     <div class="table-container"><table><thead><tr><th>Feature</th><th>Details</th></tr></thead><tbody>{feature_rows}</tbody></table></div>
         {video_section}
-    {f'<div style="background:#f8fafc;border-radius:8px;padding:16px;margin:16px 0;"><span style="color:#f59e0b;">*</span> <strong>G2 Rating:</strong> {t.get("g2_rating","N/A")}/5 ({t.get("g2_reviews","N/A")} reviews)</div>' if t.get("g2_rating") else ''}
+    {f'<div style="background:#f8fafc;border-radius:8px;padding:16px;margin:16px 0;border-left:4px solid #f59e0b;"><strong>G2 Rating:</strong> {t.get("g2_rating","N/A")}/5 <span style="color:#64748b;font-size:13px;">({t.get("g2_reviews","N/A")} reviews)</span></div>' if t.get("g2_rating") else ''}
+    {reddit_section}
     <h2 style="margin-top:32px;">⚖️ Compare with Alternatives</h2>
     {compare_section}
     <p style="margin-top:32px;">
