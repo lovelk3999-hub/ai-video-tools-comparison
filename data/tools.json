@@ -795,6 +795,312 @@
       },
       "g2_rating": 4.6,
       "g2_reviews": "200+"
+    },
+    {
+      "id": "seedance",
+      "name": "Seedance",
+      "description": "AI video generation platform built on top of multiple models including Veo 3 and Kling. Offers text-to-video, image-to-video, and AI image generation with a user-friendly interface.",
+      "category": "video-gen",
+      "url": "https://www.seedance.ai",
+      "logo_url": "",
+      "g2_rating": "",
+      "g2_reviews": "",
+      "youtube_official": [],
+      "youtube_reviews": [],
+      "features": {
+        "text_to_video": true,
+        "image_to_video": true,
+        "ai_image": true,
+        "hd_export": true,
+        "commercial_use": true,
+        "api_access": false,
+        "free_plan": true,
+        "credit_rollover": true
+      },
+      "plans": [
+        {
+          "name": "Starter",
+          "price_monthly": 20,
+          "price_yearly": 20,
+          "credits": "36,000 credits/year",
+          "features": [
+            "Up to 276 videos",
+            "7200 images",
+            "Prompt Generator",
+            "All AI models",
+            "Commercial License"
+          ]
+        },
+        {
+          "name": "Premium",
+          "price_monthly": 35,
+          "price_yearly": 35,
+          "credits": "66,000 credits/year",
+          "features": [
+            "Up to 516 videos",
+            "13,596 images",
+            "No ads",
+            "Credit roll-over"
+          ]
+        },
+        {
+          "name": "Advanced",
+          "price_monthly": 63,
+          "price_yearly": 63,
+          "credits": "156,000 credits/year",
+          "features": [
+            "Up to 1212 videos",
+            "31,992 images",
+            "All Premium features"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hailuoai",
+      "name": "Hailuo AI",
+      "description": "MiniMax's state-of-the-art AI video generation platform. Known for cinematic quality text-to-video and image-to-video, with director mode for camera control.",
+      "category": "video-gen",
+      "url": "https://hailuoai.com",
+      "logo_url": "",
+      "g2_rating": "",
+      "g2_reviews": "",
+      "youtube_official": [
+        {
+          "title": "Hailuo AI | I2V-01-Director Model | Cinematic Showcase",
+          "url": "https://youtube.com/watch?v=WDoUCT4ZC6Y"
+        }
+      ],
+      "youtube_reviews": [],
+      "features": {
+        "text_to_video": true,
+        "image_to_video": true,
+        "director_mode": true,
+        "camera_control": true,
+        "hd_export": true,
+        "commercial_use": true,
+        "api_access": true,
+        "free_plan": true
+      },
+      "plans": [
+        {
+          "name": "Free",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "3,000 free credits",
+          "features": [
+            "Basic video generation",
+            "Watermark"
+          ]
+        },
+        {
+          "name": "Starter",
+          "price_monthly": 10,
+          "price_yearly": 10,
+          "credits": "?42/month (~$6)",
+          "features": [
+            "HD export",
+            "More credits",
+            "Faster generation"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 30,
+          "price_yearly": 30,
+          "credits": "More credits",
+          "features": [
+            "Priority queue",
+            "API access"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luma",
+      "name": "Luma Dream Machine",
+      "description": "Dream Machine by Luma AI. Cinematic AI video generation with realistic motion, physics, and professional-grade output. Ideal for creative professionals.",
+      "category": "video-gen",
+      "url": "https://lumalabs.ai/dream-machine",
+      "logo_url": "",
+      "g2_rating": "4.2",
+      "g2_reviews": "150+",
+      "youtube_official": [
+        {
+          "title": "Introducing Luma Dream Machine - Next Generation AI Video",
+          "url": "https://youtube.com/watch?v=Zb3tffmBPRE"
+        }
+      ],
+      "youtube_reviews": [],
+      "features": {
+        "text_to_video": true,
+        "image_to_video": true,
+        "hd_export": true,
+        "exr_export": true,
+        "commercial_use": true,
+        "api_access": true,
+        "free_plan": true,
+        "team_collaboration": true
+      },
+      "plans": [
+        {
+          "name": "Free",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "Limited credits/month",
+          "features": [
+            "Basic generation",
+            "Standard resolution"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 30,
+          "price_yearly": 30,
+          "credits": "More credits",
+          "features": [
+            "HD export",
+            "Priority queue",
+            "Commercial use"
+          ]
+        },
+        {
+          "name": "Advanced",
+          "price_monthly": 90,
+          "price_yearly": 90,
+          "credits": "More credits",
+          "features": [
+            "Team sharing",
+            "Advanced features"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price_monthly": 300,
+          "price_yearly": 300,
+          "credits": "Custom",
+          "features": [
+            "Custom credits",
+            "Dedicated support",
+            "EXR export"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vidu",
+      "name": "Vidu",
+      "description": "AI video generation platform by Shengshu Technology. Text-to-video, image-to-video, and AI video editing with innovative content production packages.",
+      "category": "video-gen",
+      "url": "https://www.vidu.studio",
+      "logo_url": "",
+      "g2_rating": "",
+      "g2_reviews": "",
+      "youtube_official": [],
+      "youtube_reviews": [],
+      "features": {
+        "text_to_video": true,
+        "image_to_video": true,
+        "video_editing": true,
+        "face_swap": true,
+        "lip_sync": true,
+        "api_access": true,
+        "free_plan": true,
+        "commercial_use": true
+      },
+      "plans": [
+        {
+          "name": "Free",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "Limited free credits",
+          "features": [
+            "Basic generation",
+            "Watermark"
+          ]
+        },
+        {
+          "name": "Starter",
+          "price_monthly": 15,
+          "price_yearly": 15,
+          "credits": "Content production package",
+          "features": [
+            "HD export",
+            "More credits"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 40,
+          "price_yearly": 40,
+          "credits": "More credits",
+          "features": [
+            "Priority support",
+            "All features"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "did",
+      "name": "D-ID",
+      "description": "AI video platform with expressive digital avatars. Create talking-head videos from text or audio with realistic facial expressions and lip sync.",
+      "category": "avatar",
+      "url": "https://www.d-id.com",
+      "logo_url": "",
+      "g2_rating": "4.5",
+      "g2_reviews": "200+",
+      "youtube_official": [
+        {
+          "title": "V4 Expressive Avatars are LIVE in D-ID studio!",
+          "url": "https://youtube.com/watch?v=hPI6_ei_6Y8"
+        }
+      ],
+      "youtube_reviews": [],
+      "features": {
+        "text_to_video": true,
+        "avatar_generation": true,
+        "lip_sync": true,
+        "expressive_avatars": true,
+        "hd_export": true,
+        "api_access": true,
+        "free_plan": true,
+        "commercial_use": true
+      },
+      "plans": [
+        {
+          "name": "Lite",
+          "price_monthly": 5,
+          "price_yearly": 5,
+          "credits": "Limited",
+          "features": [
+            "Basic avatars",
+            "Standard resolution"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 16,
+          "price_yearly": 16,
+          "credits": "More credits",
+          "features": [
+            "HD export",
+            "More avatars",
+            "Advanced features"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price_monthly": 108,
+          "price_yearly": 108,
+          "credits": "Custom",
+          "features": [
+            "Custom avatars",
+            "Dedicated support",
+            "API access"
+          ]
+        }
+      ]
     }
   ],
   "categories": {
