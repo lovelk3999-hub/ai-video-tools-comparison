@@ -324,52 +324,51 @@
       "id": "sora",
       "name": "Sora",
       "url": "https://openai.com/sora",
-      "description": "OpenAI's text-to-video AI model capable of generating highly realistic and creative videos up to 60 seconds. Accessible via ChatGPT Plus/Pro.",
+      "description": "OpenAI's text-to-video AI model. **DISCONTINUED** - Web and mobile apps permanently shut down April 26, 2026. API sunsetting September 24, 2026. Listed for historical reference only.",
       "category": "video-gen",
       "logo_url": "",
       "youtube_official": "",
       "youtube_reviews": [],
       "plans": [
         {
-          "name": "ChatGPT Plus",
+          "name": "ChatGPT Plus (Historical)",
           "price_monthly": 20,
           "price_yearly": null,
-          "credits": "50 videos/mo (720p)",
+          "credits": "~50 videos/mo (480p/720p)",
+          "resolution": "720p",
+          "video_length": "5-20 sec",
+          "features": [
+            "~50 generations/mo",
+            "720p max (standard quality)",
+            "Standard processing speed",
+            "DISCONTINUED since April 2026"
+          ]
+        },
+        {
+          "name": "ChatGPT Pro (Historical)",
+          "price_monthly": 200,
+          "price_yearly": null,
+          "credits": "~500 videos/mo (1080p)",
+          "resolution": "1080p",
+          "video_length": "5-20 sec",
+          "features": [
+            "~500 generations/mo",
+            "1080p max",
+            "Priority processing",
+            "Complex multi-character scenes",
+            "DISCONTINUED since April 2026"
+          ]
+        },
+        {
+          "name": "Credit Refills (Historical)",
+          "price_monthly": null,
+          "price_yearly": null,
+          "credits": " for 10 extra videos",
           "resolution": "720p",
           "video_length": "5 sec",
           "features": [
-            "50 generations/mo",
-            "720p",
-            "5 sec max",
-            "Watermark"
-          ]
-        },
-        {
-          "name": "ChatGPT Pro",
-          "price_monthly": 200,
-          "price_yearly": null,
-          "credits": "500 videos/mo (1080p)",
-          "resolution": "1080p",
-          "video_length": "20 sec",
-          "features": [
-            "500 generations/mo",
-            "1080p",
-            "20 sec max",
-            "Priority access"
-          ]
-        },
-        {
-          "name": "Enterprise",
-          "price_monthly": null,
-          "price_yearly": null,
-          "credits": "Custom",
-          "resolution": "4K",
-          "video_length": "60 sec",
-          "features": [
-            "Custom volumes",
-            "4K export",
-            "Dedicated capacity",
-            "SSO"
+            " for 10 additional videos",
+            "DISCONTINUED since April 2026"
           ]
         }
       ],
@@ -382,7 +381,9 @@
         "api": false
       },
       "g2_rating": 4.2,
-      "g2_reviews": "50+"
+      "g2_reviews": "50+",
+      "status": "discontinued",
+      "discontinued_note": "Discontinued April 26, 2026. Sora API sunset September 24, 2026."
     },
     {
       "id": "kling",
