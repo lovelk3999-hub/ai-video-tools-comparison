@@ -259,7 +259,7 @@ def generate_compare_page(tool_a, tool_b):
 </div>"""
     return render_page(f"{a['name']} vs {b['name']} 2026 - Pricing, Features & Verdict", content, path=f"/compare/{a['id']}-{b['id']}/", desc=f"Compare {a['name']} vs {b['name']}: pricing, features, plans, and AI video generation capabilities.")
 
-def render_page(title, content, path='/', desc='Compare AI video tool pricing, plans, and features.', faq_schema=''):
+def render_page(title, content, path='/', desc='AI video generation tools compared: pricing, plans, features, and user reviews for 17 platforms including Sora, Runway, Pika, Kling, HeyGen and more.', faq_schema=''):
     nav = render_nav()
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -267,7 +267,7 @@ def render_page(title, content, path='/', desc='Compare AI video tool pricing, p
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
-    <meta name="description" content="Compare AI video tool pricing, plans, and features. Independent comparison of HeyGen, Synthesia, Runway, Pika, Sora, and Kling.">
+    <meta name="description" content="{desc}">
     <meta name="google-site-verification" content="DQrYBDat2T6zXgpndVazrViLHGORb7pIZKze1i67ZR4" />
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8SKQ9HHPZ"></script>

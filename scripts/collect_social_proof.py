@@ -14,7 +14,10 @@ G2_QUERIES = {
     "kling": "Kling AI", "invideo": "Invideo AI",
     "capcut": "CapCut", "colossyan": "Colossyan",
     "seedance": "Seedance", "hailuoai": "Hailuo AI",
-    "luma": "Luma Dream Machine", "vidu": "Vidu AI", "did": "D-ID"
+    "luma": "Luma Dream Machine", "vidu": "Vidu AI", "did": "D-ID",
+    "pixverse": "PixVerse AI",
+    "veo": "Veo Google AI Video",
+    "adobe-firefly": "Adobe Firefly"
 }
 
 def tf_search(query, num=5):
