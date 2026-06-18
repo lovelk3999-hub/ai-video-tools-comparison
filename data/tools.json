@@ -17,13 +17,17 @@
           "name": "Free",
           "price_monthly": 0,
           "price_yearly": 0,
-          "credits": "1 credit (1 min video)",
-          "resolution": "720p",
+          "credits": "3 videos/mo",
+          "resolution": "1080p (up to)",
           "video_length": "1 min",
           "features": [
-            "1 free credit",
-            "1 avatar",
-            "720p export",
+            "3 videos per month",
+            "Videos up to 1 min",
+            "Standard processing",
+            "500+ Stock Digital Twins",
+            "1 Custom Digital Twin",
+            "30+ languages",
+            "1080p export",
             "Watermark"
           ]
         },
@@ -31,49 +35,59 @@
           "name": "Creator",
           "price_monthly": 29,
           "price_yearly": 24,
-          "credits": "10 credits/mo",
+          "credits": "600 credits/mo",
           "resolution": "1080p",
-          "video_length": "5 min",
+          "video_length": "30 min",
           "features": [
-            "10 credits/mo",
-            "60+ avatars",
+            "600 credits/mo",
+            "Videos up to 30 mins",
             "1080p export",
-            "No watermark"
+            "Fast processing",
+            "Watermark removal",
+            "Voice Cloning",
+            "175+ languages",
+            "Credit rollovers",
+            "Unlimited Photo Avatars"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 49,
+          "price_yearly": null,
+          "credits": "1,000 credits/mo",
+          "resolution": "4K",
+          "video_length": "30 min",
+          "features": [
+            "1,000 credits/mo",
+            "4K export",
+            "Faster processing",
+            "Customizable monthly usage",
+            "Edit & proofread translations",
+            "Everything in Creator"
           ]
         },
         {
           "name": "Business",
-          "price_monthly": 49,
-          "price_yearly": null,
-          "credits": "20 credits/mo",
-          "resolution": "1080p",
-          "video_length": "20 min",
-          "features": [
-            "20 credits/mo",
-            "Brand kit",
-            "Team collaboration",
-            "API access"
-          ]
-        },
-        {
-          "name": "Enterprise",
           "price_monthly": 149,
           "price_yearly": null,
-          "credits": "Custom",
+          "credits": "Custom + /seat/mo",
           "resolution": "4K",
-          "video_length": "60 min",
+          "video_length": "30 min",
           "features": [
-            "Custom credits",
-            "Dedicated account",
-            "4K export",
-            "SSO",
-            "Custom branding"
+            "Team plan -  + /seat/mo",
+            "Collaborative workspace",
+            "Brand kit",
+            "Team templates",
+            "SAML/SSO",
+            "SCIM",
+            "Audit log",
+            "MFA enforcement"
           ]
         }
       ],
       "features": {
-        "avatar_count": "60+",
-        "languages": "120+",
+        "avatar_count": "700+ (Pro)",
+        "languages": "175+",
         "voice_cloning": true,
         "api": true,
         "custom_avatar": true,
@@ -176,56 +190,77 @@
           "name": "Free",
           "price_monthly": 0,
           "price_yearly": 0,
-          "credits": "125 credits total",
+          "credits": "125 credits (one-time)",
           "resolution": "720p",
-          "video_length": "4 sec",
+          "video_length": "25s (Gen-4 Turbo)",
           "features": [
-            "125 one-time credits",
-            "720p export",
-            "3 video projects",
+            "125 credits one-time",
+            "= 25s Gen-4 Turbo / 25 image gens",
+            "3 video editor projects",
+            "5GB asset storage",
             "Watermark"
           ]
         },
         {
           "name": "Standard",
           "price_monthly": 12,
-          "price_yearly": null,
+          "price_yearly": 12,
           "credits": "625 credits/mo",
           "resolution": "1080p",
-          "video_length": "15 sec",
+          "video_length": "52s Gen-4/125s Gen-4 Turbo",
           "features": [
             "625 credits/mo",
-            "1080p export",
-            "Unlimited projects",
-            "No watermark"
+            "All AI Apps & Workflows",
+            "Gen-4.5, Gen-4, Aleph, Veo 3.1, Veo 3",
+            "Upscale resolution",
+            "Remove watermarks",
+            "100GB asset storage",
+            "Unlimited video editor projects",
+            "Third-party models (Seedance, Kling)"
           ]
         },
         {
           "name": "Pro",
           "price_monthly": 28,
-          "price_yearly": null,
-          "credits": "2250 credits/mo",
-          "resolution": "4K",
-          "video_length": "30 sec",
+          "price_yearly": 28,
+          "credits": "2,250 credits/mo",
+          "resolution": "1080p",
+          "video_length": "187s Gen-4/450s Gen-4 Turbo",
           "features": [
-            "2250 credits/mo",
-            "4K export",
-            "Green screen",
-            "Audio generation"
+            "2,250 credits/mo",
+            "Custom Voices for Lip Sync & TTS",
+            "500GB asset storage",
+            "Everything in Standard"
           ]
         },
         {
           "name": "Max",
           "price_monthly": 76,
-          "price_yearly": null,
-          "credits": "4500 credits/mo",
+          "price_yearly": 76,
+          "credits": "9,500 credits/mo",
           "resolution": "4K",
-          "video_length": "60 sec",
+          "video_length": "791s Gen-4/1900s Gen-4 Turbo",
           "features": [
-            "4500 credits/mo",
-            "Priority processing",
-            "Custom models",
-            "Team collaboration"
+            "9,500 credits/mo",
+            "Unused credits roll over 1 month",
+            "First access to newest models",
+            "Highest generation volume",
+            "Everything in Pro"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price_monthly": null,
+          "price_yearly": null,
+          "credits": "Custom",
+          "resolution": "4K+",
+          "video_length": "Custom",
+          "features": [
+            "SSO",
+            "Custom credit amounts",
+            "Priority support",
+            "Enterprise onboarding",
+            "Workspace Analytics"
           ]
         }
       ],
@@ -363,11 +398,11 @@
           "name": "Credit Refills (Historical)",
           "price_monthly": null,
           "price_yearly": null,
-          "credits": " for 10 extra videos",
+          "credits": " $4 for 10 extra videos",
           "resolution": "720p",
           "video_length": "5 sec",
           "features": [
-            " for 10 additional videos",
+            " $4 for 10 additional videos",
             "DISCONTINUED since April 2026"
           ]
         }
