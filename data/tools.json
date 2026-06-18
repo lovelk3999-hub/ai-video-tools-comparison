@@ -805,7 +805,12 @@
       "logo_url": "",
       "g2_rating": "",
       "g2_reviews": "",
-      "youtube_official": [],
+      "youtube_official": [
+        {
+          "title": "Introducing Dreamina Seedance 2.0",
+          "url": "https://youtube.com/watch?v=yfb7aNPxuWY"
+        }
+      ],
       "youtube_reviews": [],
       "features": {
         "text_to_video": true,
