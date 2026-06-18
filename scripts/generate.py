@@ -379,9 +379,12 @@ def main():
             f.write(html)
         print(f"  [OK] compare/{a['id']}-{b['id']}/index.html")
     
+    # Generate category pages
+    cat_urls = generate_category_pages(tools)
+    
     # SEO: sitemap & robots
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    for path, pri in [("/", "1.0")] + [(f"/{t['id']}/", "0.9") for t in tools] + [(f"/compare/{a['id']}-{b['id']}/", "0.7") for a,b in pairs]:
+    for path, pri in [("/", "1.0")] + [(f"/{t['id']}/", "0.9") for t in tools] + [(f"/compare/{a['id']}-{b['id']}/", "0.7") for a,b in pairs] + [(f"/best-{c}-tools/", "0.8") for c in ["avatar", "text-to-video", "video-gen"]]:
         sitemap += f"  <url>\n    <loc>{SITE_URL}{path}</loc>\n    <lastmod>{UPDATED}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>{pri}</priority>\n  </url>\n"
     sitemap += "</urlset>\n"
     with open(os.path.join(OUTPUT_DIR, "sitemap.xml"), "w", encoding="utf-8") as f: f.write(sitemap)
@@ -391,14 +394,52 @@ def main():
     print("  [OK] robots.txt")
     
     # Summary
-    total = 1 + len(tools) + len(pairs)
+    cat_count = len(cat_urls)
+    total = 1 + len(tools) + len(pairs) + cat_count
     print(f"\n>> Generated {total + 2} files:")
     print(f"  - 1 index page")
     print(f"  - {len(tools)} tool pages")
     print(f"  - {len(pairs)} comparison pages")
+    print(f"  - {cat_count} category pages")
     print(f"  - 1 sitemap.xml")
     print(f"  - 1 robots.txt")
     print(f"  Output: {OUTPUT_DIR}")
+
+
+
+def generate_category_pages(tools):
+    """Generate category landing pages (avatar, text-to-video, video-gen)."""
+    categories = {
+        "avatar": {"title": "Best AI Avatar Tools", "desc": "Compare the top AI avatar and digital human video platforms. Best for talking-head videos, presentations, training, and marketing content."},
+        "text-to-video": {"title": "Best Text-to-Video AI Tools", "desc": "Compare the leading text-to-video and image-to-video AI generators. Best for creative video production, cinematic content, and visual effects."},
+        "video-gen": {"title": "Best AI Video Generation Tools", "desc": "Compare the top AI video generators for creating stunning videos from text prompts, images, and more. Best for cinematic content, social media videos, and creative production."}
+    }
+    
+    for cat_id, cat_info in categories.items():
+        cat_tools = [t for t in tools if t.get("category") == cat_id]
+        if not cat_tools:
+            continue
+        
+        rows = ""
+        for t in cat_tools:
+            price = price_display(t["plans"][1]["price_monthly"]) if len(t["plans"]) > 1 else "N/A"
+            g2 = t.get("g2_rating", "N/A") or "N/A"
+            vid_icon = ">>" if t.get("youtube_official") else ">>"
+            rows += f"<tr><td><a href='/{t['id']}/' style='color:#1e40af;text-decoration:none;font-weight:600;'>{t['name']}</a></td><td>{price}/mo</td><td>{g2}</td><td>{vid_icon}</td></tr>"
+        
+        table = f'<div class="table-container"><table><thead><tr><th>Tool</th><th>Starting Price</th><th>G2 Rating</th><th>Video</th></tr></thead><tbody>{rows}</tbody></table></div>'
+        
+        content = f"""<section class="hero"><div class="container"><h1>{cat_info["title"]}</h1><p>{cat_info["desc"]}</p></div></section><div class="container"><h2 style="margin-top:32px;">All {cat_info["title"].replace("Best ","")}</h2>{table}</div>"""
+        
+        path = f"/best-{cat_id}-tools/"
+        html = render_page(f"{cat_info['title']} (2026 Comparison)", content, path, cat_info["desc"])
+        
+        os.makedirs(os.path.join(OUTPUT_DIR, f"best-{cat_id}-tools"), exist_ok=True)
+        with open(os.path.join(OUTPUT_DIR, f"best-{cat_id}-tools", "index.html"), "w", encoding="utf-8") as f:
+            f.write(html)
+        print(f"  [OK] best-{cat_id}-tools/index.html")
+
+    return ["/best-avatar-tools/", "/best-text-to-video-tools/", "/best-video-gen-tools/"]
 
 if __name__ == "__main__":
     main()
