@@ -108,7 +108,14 @@ def generate_index():
     <h2 style="margin-top:40px;">❓ Frequently Asked Questions</h2>
     {faq_section}
 </div>"""
-    return render_page("AI Video Tool Pricing Comparison 2026 - Independent Guide", content)
+    # Generate FAQ JSON-LD schema
+    faq_data = data.get("faqs", [])
+    faq_schema = ""
+    if faq_data:
+        faq_items = ",\n".join(f'    {{"@type": "Question", "name": {json.dumps(f["q"])}, "acceptedAnswer": {{"@type": "Answer", "text": {json.dumps(f["a"])}}}}}' for f in faq_data)
+        faq_schema = f'<script type="application/ld+json">\n{{\n  "@context": "https://schema.org",\n  "@type": "FAQPage",\n  "mainEntity": [\n{faq_items}\n  ]\n}}\n</script>'
+    
+    return render_page("AI Video Tool Pricing Comparison 2026 - Independent Guide", content, faq_schema=faq_schema)
 
 def generate_tool_page(t):
     plan_boxes = ""
@@ -150,7 +157,10 @@ def generate_tool_page(t):
     <div class="plan-grid">{plan_boxes}</div>
     <h2 style="margin-top:32px;">✨ Key Features</h2>
     <div class="table-container"><table><thead><tr><th>Feature</th><th>Details</th></tr></thead><tbody>{feature_rows}</tbody></table></div>
-    {f'<div style="background:#f8fafc;border-radius:8px;padding:16px;margin:16px 0;"><span style="color:#f59e0b;">*</span> <strong>G2 Rating:</strong> {t.get("g2_rating","N/A")}/5 ({t.get("g2_reviews","N/A")} reviews)</div>' if t.get("g2_rating") else ''}
+        # YouTube Videos section (disabled - no data yet)
+    video_section = ""
+    
+        {f'<div style="background:#f8fafc;border-radius:8px;padding:16px;margin:16px 0;"><span style="color:#f59e0b;">*</span> <strong>G2 Rating:</strong> {t.get("g2_rating","N/A")}/5 ({t.get("g2_reviews","N/A")} reviews)</div>' if t.get("g2_rating") else ''}
     <h2 style="margin-top:32px;">⚖️ Compare with Alternatives</h2>
     {compare_section}
     <p style="margin-top:32px;">
@@ -225,7 +235,7 @@ def generate_compare_page(tool_a, tool_b):
 </div>"""
     return render_page(f"{a['name']} vs {b['name']} 2026 - Pricing, Features & Verdict", content, path=f"/compare/{a['id']}-{b['id']}/", desc=f"Compare {a['name']} vs {b['name']}: pricing, features, plans, and AI video generation capabilities.")
 
-def render_page(title, content, path='/', desc='Compare AI video tool pricing, plans, and features.'):
+def render_page(title, content, path='/', desc='Compare AI video tool pricing, plans, and features.', faq_schema=''):
     nav = render_nav()
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -234,6 +244,7 @@ def render_page(title, content, path='/', desc='Compare AI video tool pricing, p
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
     <meta name="description" content="Compare AI video tool pricing, plans, and features. Independent comparison of HeyGen, Synthesia, Runway, Pika, Sora, and Kling.">
+    {faq_schema}
     <link rel="canonical" href="{SITE_URL}{path}">
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{desc}">
