@@ -514,6 +514,247 @@
       },
       "g2_rating": 4.0,
       "g2_reviews": "30+"
+    },
+    {
+      "id": "invideo",
+      "name": "Invideo AI",
+      "url": "https://invideo.io",
+      "description": "AI video generation aggregator. Access multiple models (Veo 3.1, Kling 3.0, Seedance, etc.) through a unified credit system with AI agent interface.",
+      "category": "video-gen",
+      "logo_url": "",
+      "youtube_official": "",
+      "youtube_reviews": [],
+      "plans": [
+        {
+          "name": "Plus",
+          "price_monthly": 17,
+          "price_yearly": 17,
+          "credits": "75 credits/mo",
+          "resolution": "1080p",
+          "video_length": "30 min",
+          "features": [
+            "75 credits/mo",
+            "All AI models",
+            "4 avatars",
+            "20 GB storage",
+            "100 iStock",
+            "No watermark"
+          ]
+        },
+        {
+          "name": "Max",
+          "price_monthly": 85,
+          "price_yearly": 85,
+          "credits": "390 credits/mo",
+          "resolution": "1080p",
+          "video_length": "30 min",
+          "features": [
+            "390 credits/mo",
+            "All AI models",
+            "16 avatars",
+            "100 GB storage",
+            "200 iStock",
+            "No watermark"
+          ]
+        },
+        {
+          "name": "Generative",
+          "price_monthly": 170,
+          "price_yearly": 170,
+          "credits": "800 credits/mo",
+          "resolution": "1080p",
+          "video_length": "30 min",
+          "features": [
+            "800 credits/mo",
+            "All AI models",
+            "40 avatars",
+            "2 TB storage",
+            "1000 iStock",
+            "No watermark"
+          ]
+        },
+        {
+          "name": "Elite",
+          "price_monthly": 900,
+          "price_yearly": 900,
+          "credits": "4250 credits/mo",
+          "resolution": "4K",
+          "video_length": "30 min",
+          "features": [
+            "4250 credits/mo",
+            "200 avatars",
+            "10 TB storage",
+            "5000 iStock",
+            "No watermark"
+          ]
+        }
+      ],
+      "features": {
+        "text_to_video": true,
+        "image_to_video": true,
+        "api": true,
+        "multi_model": true
+      },
+      "g2_rating": 4.5,
+      "g2_reviews": "100+"
+    },
+    {
+      "id": "capcut",
+      "name": "CapCut",
+      "url": "https://www.capcut.com",
+      "description": "ByteDance video editor with powerful AI features. Free desktop/mobile editor with optional Pro tier for 4K, AI toolkit, and cloud storage.",
+      "category": "video-gen",
+      "logo_url": "",
+      "youtube_official": "",
+      "youtube_reviews": [],
+      "plans": [
+        {
+          "name": "Free",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "Free",
+          "resolution": "1080p",
+          "video_length": "Unlimited",
+          "features": [
+            "Free forever",
+            "Basic editing",
+            "1080p export",
+            "Limited AI effects",
+            "Cloud storage"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price_monthly": 10,
+          "price_yearly": 7,
+          "credits": "Standard",
+          "resolution": "1080p",
+          "video_length": "Unlimited",
+          "features": [
+            "$9.99/mo",
+            "1080p export",
+            "Basic AI features",
+            "Cloud storage"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 20,
+          "price_yearly": 15,
+          "credits": "Pro",
+          "resolution": "4K",
+          "video_length": "Unlimited",
+          "features": [
+            "$19.99/mo",
+            "4K/HDR export",
+            "Full AI toolkit",
+            "Smart tracking",
+            "1TB storage"
+          ]
+        },
+        {
+          "name": "Team",
+          "price_monthly": 25,
+          "price_yearly": 25,
+          "credits": "Team",
+          "resolution": "4K",
+          "video_length": "Unlimited",
+          "features": [
+            "$24.99/seat/mo",
+            "Collaboration",
+            "Brand assets",
+            "Team workspace"
+          ]
+        }
+      ],
+      "features": {
+        "video_editing": true,
+        "mobile_editor": true,
+        "desktop_editor": true
+      },
+      "g2_rating": 4.5,
+      "g2_reviews": "5000+"
+    },
+    {
+      "id": "colossyan",
+      "name": "Colossyan",
+      "url": "https://www.colossyan.com",
+      "description": "Enterprise AI video platform for workplace training. Create professional avatar videos with interactive quizzes and SCORM export.",
+      "category": "avatar",
+      "logo_url": "",
+      "youtube_official": "",
+      "youtube_reviews": [],
+      "plans": [
+        {
+          "name": "Free",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "3 min video",
+          "resolution": "720p",
+          "video_length": "3 min",
+          "features": [
+            "3 min total",
+            "Limited avatars",
+            "Watermark"
+          ]
+        },
+        {
+          "name": "Starter",
+          "price_monthly": 19,
+          "price_yearly": 19,
+          "credits": "15 min/mo",
+          "resolution": "1080p",
+          "video_length": "5 min",
+          "features": [
+            "15 min/mo",
+            "70+ avatars",
+            "3 Custom Avatars",
+            "1 Voice clone",
+            "Unlimited viewers"
+          ]
+        },
+        {
+          "name": "Business",
+          "price_monthly": 70,
+          "price_yearly": 70,
+          "credits": "Unlimited",
+          "resolution": "1080p",
+          "video_length": "30 min",
+          "features": [
+            "Unlimited minutes",
+            "170+ avatars",
+            "10 Custom Avatars",
+            "NEO 2 model",
+            "Interactive videos",
+            "Auto translations"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price_monthly": null,
+          "price_yearly": null,
+          "credits": "Custom",
+          "resolution": "4K",
+          "video_length": "Custom",
+          "features": [
+            "Custom pricing",
+            "200+ avatars",
+            "Brand kits",
+            "SAML/SSO",
+            "SCORM export"
+          ]
+        }
+      ],
+      "features": {
+        "avatar_count": "170+",
+        "languages": "70+",
+        "voice_cloning": true,
+        "api": true,
+        "custom_avatar": true,
+        "interactive_video": true
+      },
+      "g2_rating": 4.6,
+      "g2_reviews": "200+"
     }
   ],
   "categories": {
