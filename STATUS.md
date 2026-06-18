@@ -1,7 +1,7 @@
 # STATUS - AI Video Tools Comparison
 
 > 上次更新: 2026-06-19
-> 当前任务: 10-new-tool-videos.md - 为新工具找官方视频
+> 当前任务: 等待Google收录 (08-search-console-check.md)
 
 ---
 

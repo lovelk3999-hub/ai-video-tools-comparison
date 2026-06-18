@@ -1416,30 +1416,45 @@
           "name": "Free",
           "price_monthly": 0,
           "price_yearly": 0,
-          "credits": "Limited free credits",
-          "resolution": "720p",
+          "credits": "100 initial + 60 daily",
+          "resolution": "540p",
           "video_length": "Short clips",
           "features": [
-            "Limited free generations",
-            "720p export",
+            "100 initial credits",
+            "60 daily renewal",
+            "540p export",
             "Watermark",
-            "Community access",
-            "Basic templates"
+            "Basic access"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price_monthly": 10,
+          "price_yearly": 7,
+          "credits": "1,200/mo",
+          "resolution": "1080p",
+          "video_length": "Up to 10 sec",
+          "features": [
+            "1,200 credits per month",
+            "1080p export",
+            "No watermark",
+            "5 concurrent jobs",
+            "API access"
           ]
         },
         {
           "name": "Pro",
-          "price_monthly": 10,
-          "price_yearly": 8,
-          "credits": "Monthly credit package",
-          "resolution": "1080p",
+          "price_monthly": 24,
+          "price_yearly": 20,
+          "credits": "6,000/mo",
+          "resolution": "1080p+",
           "video_length": "Up to 15 sec",
           "features": [
-            "More credits monthly",
-            "1080p export",
+            "6,000 credits per month",
+            "1080p+ export",
             "No watermark",
+            "5 concurrent jobs",
             "Priority processing",
-            "Advanced templates",
             "API access"
           ]
         },
@@ -1451,12 +1466,11 @@
           "resolution": "4K",
           "video_length": "Custom",
           "features": [
-            "Custom pricing",
+            "Custom pricing from $100/mo",
             "4K export",
             "Dedicated support",
             "Custom models",
-            "SLA guarantee",
-            "Volume discounts"
+            "SLA guarantee"
           ]
         }
       ],
@@ -1595,61 +1609,62 @@
           "name": "Free",
           "price_monthly": 0,
           "price_yearly": 0,
-          "credits": "25 gen/mo",
+          "credits": "25/mo",
           "resolution": "720p",
           "video_length": "Short clips",
           "features": [
             "25 generative credits per month",
             "720p export",
-            "Watermark on free plan",
-            "Basic templates"
+            "Watermark",
+            "Basic templates",
+            "Adobe Firefly web access"
           ]
         },
         {
-          "name": "Firefly Standard",
+          "name": "Standard",
           "price_monthly": 10,
           "price_yearly": 0,
-          "credits": "100 gen/mo",
+          "credits": "2,000/mo",
           "resolution": "1080p",
           "video_length": "Up to 5 sec",
           "features": [
-            "100 generative credits per month",
-            "1080p export",
+            "2,000 credits per month",
+            "Up to 20 five-second 1080p videos",
             "No watermark",
-            "Priority processing",
-            "Commercial use"
+            "Commercial use",
+            "Adobe Fonts"
           ]
         },
         {
-          "name": "Firefly Pro",
-          "price_monthly": 30,
+          "name": "Pro",
+          "price_monthly": 20,
           "price_yearly": 0,
-          "credits": "500 gen/mo",
+          "credits": "4,000/mo",
           "resolution": "4K",
           "video_length": "Up to 10 sec",
           "features": [
-            "500 generative credits per month",
+            "4,000 credits per month",
             "4K export",
             "No watermark",
-            "Highest priority",
-            "Full commercial rights",
-            "Adobe Fonts included"
+            "Video/audio generation",
+            "Priority processing",
+            "Premium Support"
           ]
         },
         {
-          "name": "Creative Cloud All Apps",
+          "name": "Creative Cloud",
           "price_monthly": 60,
           "price_yearly": 50,
-          "credits": "1000 gen/mo",
+          "credits": "Unlimited",
           "resolution": "4K",
           "video_length": "Up to 10 sec",
           "features": [
-            "1000 generative credits",
+            "Unlimited generative credits",
             "Full Creative Cloud suite",
             "4K export",
-            "20+ apps",
-            "100GB cloud storage",
-            "Premium Support"
+            "20+ Adobe apps",
+            "100GB+ cloud storage",
+            "Adobe Portfolio"
           ]
         }
       ],
@@ -1664,8 +1679,8 @@
         "max_video_length": "10 sec (Pro)",
         "commercial_use": true
       },
-      "g2_rating": null,
-      "g2_reviews": null,
+      "g2_rating": "4.4",
+      "g2_reviews": "335",
       "reddit_posts": [
         {
           "title": "I produced my first product line and marketing materials of 2026 ...",
