@@ -269,6 +269,15 @@ def render_page(title, content, path='/', desc='Compare AI video tool pricing, p
     <title>{title}</title>
     <meta name="description" content="Compare AI video tool pricing, plans, and features. Independent comparison of HeyGen, Synthesia, Runway, Pika, Sora, and Kling.">
     <meta name="google-site-verification" content="DQrYBDat2T6zXgpndVazrViLHGORb7pIZKze1i67ZR4" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8SKQ9HHPZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){{dataLayer.push(arguments);}}
+        gtag('js', new Date());
+        gtag('config', 'G-B8SKQ9HHPZ');
+    </script>
+
     {faq_schema}
     <link rel="canonical" href="{SITE_URL}{path}">
     <meta property="og:title" content="{title}">
