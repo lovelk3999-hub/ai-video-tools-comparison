@@ -1,7 +1,7 @@
 # STATUS - AI Video Tools Comparison
 
 > 上次更新: 2026-06-19
-> 当前任务: 08-search-console-check.md (Phase 3 - 检查收录)
+> 当前任务: 10-new-tool-videos.md - 为新工具找官方视频
 
 ---
 
@@ -30,7 +30,7 @@ G2评分 + Reddit讨论已集成完毕 | Google Search Console已验证 & sitema
 | Pika官方视频 | ✅ 完成 | Pika 2.0 Scene Ingredients |
 | Vidu官方视频 | ✅ 完成 | Vidu Q3 Suite Upgraded |
 | FAQ扩充到30+条 | ✅ 完成 | 已从17条扩充到30条 |
-| 新增工具(PixVerse + VEO) | ✅ 完成 | 16个工具，139页 |
+| 新增工具(PixVerse + VEO + Firefly) | ✅ 完成 | 17个工具，156页 |
 
 ---
 

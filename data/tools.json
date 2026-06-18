@@ -1404,7 +1404,12 @@
       "description": "Advanced AI video generation platform supporting text-to-video, image-to-video, multi-shot narrative, lip-sync, and native audio generation. Known for high ELO scores and competitive API pricing.",
       "category": "text-to-video",
       "logo_url": "",
-      "youtube_official": [],
+      "youtube_official": [
+        {
+          "title": "Generate AI Video Worlds Live in Real-Time (PixVerse R1)",
+          "url": "https://www.youtube.com/watch?v=cvXpWUY718o"
+        }
+      ],
       "youtube_reviews": [],
       "plans": [
         {
@@ -1500,7 +1505,12 @@
       "description": "Google's advanced AI video generation model available through Google AI Studio and Gemini API. Supports text-to-video and image-to-video with high-quality output and physics simulation.",
       "category": "text-to-video",
       "logo_url": "",
-      "youtube_official": [],
+      "youtube_official": [
+        {
+          "title": "Veo 3 demo | Sailor and the sea",
+          "url": "https://www.youtube.com/watch?v=mCFMn0UkRt0"
+        }
+      ],
       "youtube_reviews": [],
       "plans": [
         {
@@ -1573,7 +1583,12 @@
       "description": "Adobe's generative AI video tool integrated into Creative Cloud. Supports text-to-video, image-to-video, and AI video editing with professional-grade output.",
       "category": "text-to-video",
       "logo_url": "",
-      "youtube_official": [],
+      "youtube_official": [
+        {
+          "title": "A Reimagined Image + Video Experience | Adobe Firefly",
+          "url": "https://www.youtube.com/watch?v=FaoRdcs9HmM"
+        }
+      ],
       "youtube_reviews": [],
       "plans": [
         {
