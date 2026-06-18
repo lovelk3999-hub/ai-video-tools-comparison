@@ -358,7 +358,12 @@
       "description": "AI video generation platform focused on creative expression. Known for intuitive interface and high-quality video generation with simple prompts.",
       "category": "video-gen",
       "logo_url": "",
-      "youtube_official": [],
+      "youtube_official": [
+        {
+          "title": "Pika 2.0 ✨Scene Ingredients✨",
+          "url": "https://www.youtube.com/watch?v=11b-7KAHMV0"
+        }
+      ],
       "youtube_reviews": [],
       "plans": [
         {
@@ -637,7 +642,7 @@
         "chinese_optimized": true,
         "multi_language": true
       },
-      "g2_rating": 4.0,
+      "g2_rating": 4,
       "g2_reviews": "30+",
       "reddit_posts": [
         {
@@ -1148,7 +1153,7 @@
       "category": "video-gen",
       "url": "https://lumalabs.ai/dream-machine",
       "logo_url": "",
-      "g2_rating": 5.0,
+      "g2_rating": 5,
       "g2_reviews": "1 verified",
       "youtube_official": [
         {
@@ -1241,7 +1246,12 @@
       "logo_url": "",
       "g2_rating": 4.9,
       "g2_reviews": "14",
-      "youtube_official": [],
+      "youtube_official": [
+        {
+          "title": "Vidu Q3 Suite Upgraded: Faster and More Efficient",
+          "url": "https://www.youtube.com/watch?v=BME1S-egJ4s"
+        }
+      ],
       "youtube_reviews": [],
       "features": {
         "text_to_video": true,
