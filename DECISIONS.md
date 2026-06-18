@@ -10,6 +10,3 @@
 | 2026-06-19 | 视频素材从测评博主/官网采集，不自己生成 | 降低内容制作成本 | 方案设计 |
 | 2026-06-19 | 只做对比表+定价，不做主观评测 | 避免争议，保持中立定位 | 方案设计 |
 | 2026-06-19 | 站点SEO：OG标签 + sitemap + robots.txt + FAQ结构化数据 | Google搜索排名优化 | SEO优化 |
-2026-06-19 | CI/CD Secrets配置 | CF_API_TOKEN + CF_ACCOUNT_ID 添加到GitHub Secrets | 部署流水线
-2026-06-19 | GitHub Actions权限修复 | 添加 contents: write 权限和工作流自动提交 | 自动部署修复
-2026-06-19 | DataDome反爬对策 | G2用浏览器采集（非headless），Reddit用Playwright方案 | G2有强反爬
