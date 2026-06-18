@@ -1543,7 +1543,7 @@
         "max_video_length": "60 sec",
         "pricing_model": "Per-second API pricing"
       },
-      "g2_rating": 4.0,
+      "g2_rating": 4,
       "g2_reviews": "3",
       "reddit_posts": [
         {
@@ -1563,6 +1563,112 @@
           "snippet": "I made a video on different ways to record a game up to 9v9 and have lots of samples. Record your team's soccer matches for review and enjoyment ...",
           "url": "https://www.reddit.com/r/SoccerCoaching/comments/1nmibud/looking_for_your_experience_video_alternative_to/",
           "date": "Sep 21, 2025"
+        }
+      ]
+    },
+    {
+      "id": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "url": "https://www.adobe.com/products/firefly.html",
+      "description": "Adobe's generative AI video tool integrated into Creative Cloud. Supports text-to-video, image-to-video, and AI video editing with professional-grade output.",
+      "category": "text-to-video",
+      "logo_url": "",
+      "youtube_official": [],
+      "youtube_reviews": [],
+      "plans": [
+        {
+          "name": "Free",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "25 gen/mo",
+          "resolution": "720p",
+          "video_length": "Short clips",
+          "features": [
+            "25 generative credits per month",
+            "720p export",
+            "Watermark on free plan",
+            "Basic templates"
+          ]
+        },
+        {
+          "name": "Firefly Standard",
+          "price_monthly": 10,
+          "price_yearly": 0,
+          "credits": "100 gen/mo",
+          "resolution": "1080p",
+          "video_length": "Up to 5 sec",
+          "features": [
+            "100 generative credits per month",
+            "1080p export",
+            "No watermark",
+            "Priority processing",
+            "Commercial use"
+          ]
+        },
+        {
+          "name": "Firefly Pro",
+          "price_monthly": 30,
+          "price_yearly": 0,
+          "credits": "500 gen/mo",
+          "resolution": "4K",
+          "video_length": "Up to 10 sec",
+          "features": [
+            "500 generative credits per month",
+            "4K export",
+            "No watermark",
+            "Highest priority",
+            "Full commercial rights",
+            "Adobe Fonts included"
+          ]
+        },
+        {
+          "name": "Creative Cloud All Apps",
+          "price_monthly": 60,
+          "price_yearly": 50,
+          "credits": "1000 gen/mo",
+          "resolution": "4K",
+          "video_length": "Up to 10 sec",
+          "features": [
+            "1000 generative credits",
+            "Full Creative Cloud suite",
+            "4K export",
+            "20+ apps",
+            "100GB cloud storage",
+            "Premium Support"
+          ]
+        }
+      ],
+      "features": {
+        "text_to_video": true,
+        "image_to_video": true,
+        "video_editing": true,
+        "generative_fill": true,
+        "adobe_integration": true,
+        "api": true,
+        "resolution": "4K max",
+        "max_video_length": "10 sec (Pro)",
+        "commercial_use": true
+      },
+      "g2_rating": null,
+      "g2_reviews": null,
+      "reddit_posts": [
+        {
+          "title": "I produced my first product line and marketing materials of 2026 ...",
+          "snippet": "Having committed to ethical AI, I am careful not to slip into another model during image generation. But the Firefly interface could support ...",
+          "url": "https://www.reddit.com/r/Adobe/comments/1q7rm2f/i_produced_my_first_product_line_and_marketing/",
+          "date": "Jan 8, 2026"
+        },
+        {
+          "title": "Adobe Firefly is a Scam - Reddit",
+          "snippet": "Honestly, they are not ready fully primetime. I get better results with free AI sources right now. The fact that they are charging so much for ...",
+          "url": "https://www.reddit.com/r/Adobe/comments/1iq7857/adobe_firefly_is_a_scam/",
+          "date": "Feb 15, 2025"
+        },
+        {
+          "title": "Adobe Firefly generative fill is insanely helpful : r/editors - Reddit",
+          "snippet": "Adobe Firefly is utterly hobbled by the limited (but apparently copyright free) images it is trained on; it's by far and away the worst of the ...",
+          "url": "https://www.reddit.com/r/editors/comments/16oicfd/adobe_firefly_generative_fill_is_insanely_helpful/",
+          "date": "Sep 21, 2023"
         }
       ]
     }

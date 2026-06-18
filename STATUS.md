@@ -1,7 +1,7 @@
 # STATUS - AI Video Tools Comparison
 
 > 上次更新: 2026-06-19
-> 当前任务: 09-more-tools-research.md (Phase 2 - 更多新工具)
+> 当前任务: 08-search-console-check.md (Phase 3 - 检查收录)
 
 ---
 
@@ -30,7 +30,7 @@ G2评分 + Reddit讨论已集成完毕 | Google Search Console已验证 & sitema
 | Pika官方视频 | ✅ 完成 | Pika 2.0 Scene Ingredients |
 | Vidu官方视频 | ✅ 完成 | Vidu Q3 Suite Upgraded |
 | FAQ扩充到30+条 | ✅ 完成 | 已从17条扩充到30条 |
-| 新增工具(PixVerse) | ✅ 完成 | PixVerse已收录，15个工具，123页 |
+| 新增工具(PixVerse + VEO) | ✅ 完成 | 16个工具，139页 |
 
 ---
 
