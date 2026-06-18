@@ -1,7 +1,7 @@
 {
   "site_name": "AI Video Tools Comparison",
   "site_url": "https://ai-video-tools.pages.dev",
-  "updated": "2026-06-18",
+  "updated": "2026-06-19",
   "tools": [
     {
       "id": "heygen",
@@ -1490,6 +1490,79 @@
           "snippet": "They rip of people for lots of money. Even their highest subscription fees still give you \"limited\" credits. If someone is a creator an needs to ...",
           "url": "https://www.reddit.com/r/generativeAI/comments/1rzim0a/ok_guys_since_its_hard_to_find_an_unlimited_ai/",
           "date": "Mar 21, 2026"
+        }
+      ]
+    },
+    {
+      "id": "veo",
+      "name": "Google VEO",
+      "url": "https://aistudio.google.com/models/veo-3",
+      "description": "Google's advanced AI video generation model available through Google AI Studio and Gemini API. Supports text-to-video and image-to-video with high-quality output and physics simulation.",
+      "category": "text-to-video",
+      "logo_url": "",
+      "youtube_official": [],
+      "youtube_reviews": [],
+      "plans": [
+        {
+          "name": "Free",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "Free tier (limited)",
+          "resolution": "720p",
+          "video_length": "Short clips",
+          "features": [
+            "Free through Google AI Studio",
+            "Limited generations",
+            "720p export",
+            "Basic features"
+          ]
+        },
+        {
+          "name": "API Pay-as-you-go",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "Per-second billing",
+          "resolution": "1080p+",
+          "video_length": "Up to 60 sec",
+          "features": [
+            "$0.35/sec (Veo 2)",
+            "Veo 3 via Gemini API",
+            "1080p+ export",
+            "Higher quality",
+            "Faster processing"
+          ]
+        }
+      ],
+      "features": {
+        "text_to_video": true,
+        "image_to_video": true,
+        "physics_simulation": true,
+        "api": true,
+        "google_integration": true,
+        "resolution": "1080p+",
+        "max_video_length": "60 sec",
+        "pricing_model": "Per-second API pricing"
+      },
+      "g2_rating": 4.0,
+      "g2_reviews": "3",
+      "reddit_posts": [
+        {
+          "title": "What are your hopes for VEO in 2026? : r/VEO3 - Reddit",
+          "snippet": "Better first frame to last frame (currently. Smarter editing as well would be nice. Longer video 12-15 seconds for 1 clip and native 4k.",
+          "url": "https://www.reddit.com/r/VEO3/comments/1q151m4/what_are_your_hopes_for_veo_in_2026/",
+          "date": "Jan 1, 2026"
+        },
+        {
+          "title": "Veo has become completely useless since the update : r/VEO3",
+          "snippet": "Discuss, review, and share tips on Vevor's range of equipment and tools. ... © 2026. All rights reserved. Expand Navigation. Expand Navigation.",
+          "url": "https://www.reddit.com/r/VEO3/comments/1tjhidu/veo_has_become_completely_useless_since_the_update/",
+          "date": "May 21, 2026"
+        },
+        {
+          "title": "Looking for your experience, Video alternative to VEO - Reddit",
+          "snippet": "I made a video on different ways to record a game up to 9v9 and have lots of samples. Record your team's soccer matches for review and enjoyment ...",
+          "url": "https://www.reddit.com/r/SoccerCoaching/comments/1nmibud/looking_for_your_experience_video_alternative_to/",
+          "date": "Sep 21, 2025"
         }
       ]
     }
