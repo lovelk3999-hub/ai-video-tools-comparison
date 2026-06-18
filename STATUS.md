@@ -1,7 +1,7 @@
 # STATUS - AI Video Tools Comparison
 
 > 上次更新: 2026-06-19
-> 当前任务: 03-faq-expansion.md
+> 当前任务: 04-refresh-g2-reddit.md
 
 ---
 
@@ -29,7 +29,7 @@ G2评分 + Reddit讨论已集成完毕 | Google Search Console已验证 & sitema
 | Google Search Console | ✅ 已验证 | meta tag验证 + sitemap已提交 |
 | Pika官方视频 | ✅ 完成 | Pika 2.0 Scene Ingredients |
 | Vidu官方视频 | ✅ 完成 | Vidu Q3 Suite Upgraded |
-| FAQ扩充到30+条 | 🔴 当前任务 | 目标扩充到30+条 |
+| FAQ扩充到30+条 | ✅ 完成 | 已从17条扩充到30条 |
 | 新增工具(PixVerse等) | ⏳ 待办 | 调研并收录新工具 |
 
 ---
