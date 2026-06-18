@@ -145,6 +145,19 @@ def generate_tool_page(t):
         if other["id"] == t["id"]: continue
         compare_section += f'<div class="compare-pair"><h3><a href="/compare/{t["id"]}-{other["id"]}/">{t["name"]} vs {other["name"]}</a></h3></div>'
     
+        # YouTube Videos section
+    video_section = ""
+    ys = t.get("youtube_official", [])
+    if isinstance(ys, list) and len(ys) > 0:
+        embeds = []
+        for v in ys:
+            vu = v.get("url", "")
+            vi = vu.split("v=")[-1].split("&")[0] if "v=" in vu else vu.split("/")[-1]
+            vt = v.get("title", "")
+            h1 = '<div style="margin-bottom:16px;"><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;"><iframe src="https://www.youtube.com/embed/' + vi + '" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe></div><p style="font-size:13px;color:#64748b;margin-top:4px;">Official: ' + vt + '</p></div>'
+            embeds.append(h1)
+        video_section = '<h2 style="margin-top:32px;">Official Video</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin:16px 0;">' + ''.join(embeds) + '</div>'
+    
     content = f"""
 <section class="hero">
     <div class="container">
@@ -157,10 +170,8 @@ def generate_tool_page(t):
     <div class="plan-grid">{plan_boxes}</div>
     <h2 style="margin-top:32px;">✨ Key Features</h2>
     <div class="table-container"><table><thead><tr><th>Feature</th><th>Details</th></tr></thead><tbody>{feature_rows}</tbody></table></div>
-        # YouTube Videos section (disabled - no data yet)
-    video_section = ""
-    
-        {f'<div style="background:#f8fafc;border-radius:8px;padding:16px;margin:16px 0;"><span style="color:#f59e0b;">*</span> <strong>G2 Rating:</strong> {t.get("g2_rating","N/A")}/5 ({t.get("g2_reviews","N/A")} reviews)</div>' if t.get("g2_rating") else ''}
+        {video_section}
+    {f'<div style="background:#f8fafc;border-radius:8px;padding:16px;margin:16px 0;"><span style="color:#f59e0b;">*</span> <strong>G2 Rating:</strong> {t.get("g2_rating","N/A")}/5 ({t.get("g2_reviews","N/A")} reviews)</div>' if t.get("g2_rating") else ''}
     <h2 style="margin-top:32px;">⚖️ Compare with Alternatives</h2>
     {compare_section}
     <p style="margin-top:32px;">
