@@ -1,0 +1,29 @@
+﻿name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 8 1 * *"   # Monthly on 1st at 8am UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      
+      - name: Generate site
+        run: python scripts/generate.py
+      
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: pages deploy output --project-name=ai-video-tools

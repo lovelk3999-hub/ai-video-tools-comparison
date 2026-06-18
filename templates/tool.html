@@ -1,0 +1,44 @@
+﻿{{NAV_HEADER}}
+
+<section class="hero">
+    <div class="container">
+        <h1>{{TOOL_NAME}} Pricing &amp; Plans</h1>
+        <p>{{TOOL_DESCRIPTION}}. Compare {{TOOL_NAME}}'s pricing plans, features, and see how it stacks up against alternatives.</p>
+    </div>
+</section>
+
+<div class="container">
+    <!-- Plans -->
+    <h2 style="margin-top: 32px;">💵 Pricing Plans</h2>
+    <div class="plan-grid">
+        {{PLAN_BOXES}}
+    </div>
+
+    <!-- Key Features -->
+    <h2 style="margin-top: 32px;">✨ Key Features</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{FEATURE_ROWS}}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- API Pricing -->
+    {{API_SECTION}}
+
+    <!-- Comparisons -->
+    <h2 style="margin-top: 32px;">⚖️ {{TOOL_NAME}} vs Alternatives</h2>
+    {{COMPARE_SECTION}}
+
+    <p style="margin-top: 32px;">
+        <a href="/" class="btn btn-secondary">← Back to All Tools</a>
+        <a href="{{TOOL_URL}}" class="btn" target="_blank" rel="nofollow">Visit {{TOOL_NAME}} →</a>
+    </p>
+</div>

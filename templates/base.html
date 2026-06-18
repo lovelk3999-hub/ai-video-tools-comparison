@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} - AI Video Tools Comparison</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <link rel="canonical" href="https://ai-video-tools-comparison.com/{{PATH}}">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 24px 0;
+        }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        header h1 { font-size: 20px; }
+        header a { color: white; text-decoration: none; }
+        nav a { margin-left: 24px; font-size: 14px; opacity: 0.9; }
+        nav a:hover { opacity: 1; text-decoration: underline; }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 60px 0 48px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+        .hero p { font-size: 18px; color: #475569; max-width: 640px; margin: 0 auto; }
+
+        /* Tables */
+        .table-container { overflow-x: auto; margin: 24px 0; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+        th { background: #f1f5f9; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #475569; }
+        tr:hover { background: #f8fafc; }
+        td:first-child { font-weight: 600; }
+
+        /* Tool cards */
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            margin: 24px 0;
+        }
+        .tool-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .tool-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .tool-card h2 { font-size: 20px; margin-bottom: 8px; }
+        .tool-card h2 a { color: #1e40af; text-decoration: none; }
+        .tool-card h2 a:hover { text-decoration: underline; }
+        .tool-card .desc { color: #64748b; font-size: 14px; margin-bottom: 12px; }
+        .tool-card .price { font-size: 24px; font-weight: 700; color: #059669; }
+        .tool-card .price-label { font-size: 13px; color: #94a3b8; }
+
+        /* Plan boxes */
+        .plan-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .plan-box {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        .plan-box.featured { border-color: #3b82f6; box-shadow: 0 0 0 2px #bfdbfe; }
+        .plan-box h3 { font-size: 16px; color: #475569; margin-bottom: 8px; }
+        .plan-box .price { font-size: 28px; font-weight: 800; color: #1e293b; }
+        .plan-box .price-period { font-size: 14px; color: #94a3b8; }
+        .plan-box ul { list-style: none; text-align: left; margin-top: 16px; }
+        .plan-box ul li { padding: 4px 0; font-size: 13px; color: #475569; }
+        .plan-box ul li::before { content: "✓ "; color: #059669; font-weight: 700; }
+
+        /* Compare section */
+        .compare-pair {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .compare-pair h3 { font-size: 18px; margin-bottom: 12px; }
+        .compare-pair h3 a { color: #1e40af; text-decoration: none; }
+        .compare-pair h3 a:hover { text-decoration: underline; }
+
+        .btn {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s;
+            margin-top: 8px;
+        }
+        .btn:hover { background: #2563eb; }
+        .btn-secondary { background: #e2e8f0; color: #1e293b; }
+        .btn-secondary:hover { background: #cbd5e1; }
+
+        /* Compare table special */
+        .compare-table { margin: 24px 0; }
+        .compare-table td { vertical-align: top; }
+        .compare-table .winner { font-weight: 700; color: #059669; }
+        .compare-table .highlight { background: #f0fdf4; }
+
+        footer {
+            background: #1e293b;
+            color: #94a3b8;
+            padding: 24px 0;
+            text-align: center;
+            font-size: 13px;
+            margin-top: 48px;
+        }
+        footer a { color: #94a3b8; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 24px; }
+            .tool-grid { grid-template-columns: 1fr; }
+            .plan-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    {{NAV_HEADER}}
+
+    {{CONTENT}}
+
+    <footer>
+        <div class="container">
+            <p>© 2026 AI Video Tools Comparison. Independent comparison of AI video creation platforms.</p>
+            <p style="margin-top: 8px;">Prices and features from official websites. Always verify on the official site.</p>
+        </div>
+    </footer>
+</body>
+</html>
