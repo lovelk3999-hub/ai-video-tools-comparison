@@ -7,6 +7,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(BASE_DIR, "data", "tools.json")
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+SITE_URL = "https://ai-video-tools-comparison.pages.dev"
+UPDATED = datetime.now().strftime("%Y-%m-%d")
 
 with open(DATA_FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
@@ -53,7 +55,7 @@ def generate_index():
         <tr>
             <td><a href="/{t['id']}/" style="font-weight:600;color:#1e40af;">{t['name']}</a></td>
             <td><span class="price" style="font-size:18px;">{start_price}</span></td>
-            <td>{'✅ Yes' if has_free else '❌ No'}</td>
+            <td>{'>> Yes' if has_free else '❌ No'}</td>
             <td>{'Avatar / Digital Human' if t['category'] == 'avatar' else 'Text-to-Video Generation'}</td>
             <td><a href="/{t['id']}/" class="btn" style="padding:6px 16px;font-size:13px;">Details</a></td>
         </tr>"""
@@ -127,7 +129,7 @@ def generate_tool_page(t):
     feature_rows = ""
     for k, v in t["features"].items():
         label = k.replace("_", " ").title()
-        val = "✅" if v is True else ("❌" if v is False else str(v))
+        val = ">>" if v is True else ("❌" if v is False else str(v))
         feature_rows += f"<tr><td>{label}</td><td>{val}</td></tr>"
     
     # Comparisons to other tools
@@ -156,22 +158,22 @@ def generate_tool_page(t):
         <a href="{t["url"]}" class="btn" target="_blank" rel="nofollow noopener">Visit {t["name"]} -></a>
     </p>
 </div>"""
-    return render_page(f"{t['name']} Pricing & Plans 2026 - Features, Free Plan & Alternatives", content)
+    return render_page(f"{t['name']} Pricing & Plans 2026 - Features, Free Plan & Alternatives", content, path=f"/{t['id']}/", desc=t["description"])
 
 def generate_compare_page(tool_a, tool_b):
     a, b = tool_a, tool_b
     compare_rows = ""
     # Compare prices
     compare_rows += f"<tr><td><strong>Starting Price</strong></td><td>{price_display(a['plans'][1]['price_monthly'])}/mo</td><td>{price_display(b['plans'][1]['price_monthly'])}/mo</td></tr>"
-    compare_rows += f"<tr><td><strong>Free Plan</strong></td><td>{'✅ Yes' if any(p['price_monthly']==0 for p in a['plans']) else '❌ No'}</td><td>{'✅ Yes' if any(p['price_monthly']==0 for p in b['plans']) else '❌ No'}</td></tr>"
+    compare_rows += f"<tr><td><strong>Free Plan</strong></td><td>{'>> Yes' if any(p['price_monthly']==0 for p in a['plans']) else '❌ No'}</td><td>{'>> Yes' if any(p['price_monthly']==0 for p in b['plans']) else '❌ No'}</td></tr>"
     
     # Compare features
     all_features = set(list(a["features"].keys()) + list(b["features"].keys()))
     for feat in sorted(all_features):
         va = a["features"].get(feat, False)
         vb = b["features"].get(feat, False)
-        va_str = "✅" if va is True else ("❌" if va is False else str(va))
-        vb_str = "✅" if vb is True else ("❌" if vb is False else str(vb))
+        va_str = ">>" if va is True else ("❌" if va is False else str(va))
+        vb_str = ">>" if vb is True else ("❌" if vb is False else str(vb))
         label = feat.replace("_", " ").title()
         compare_rows += f"<tr><td>{label}</td><td>{va_str}</td><td>{vb_str}</td></tr>"
     
@@ -221,9 +223,9 @@ def generate_compare_page(tool_a, tool_b):
     </div>
     <p style="margin-top:24px;"><a href="/" class="btn btn-secondary">← Back to All Tools</a></p>
 </div>"""
-    return render_page(f"{a['name']} vs {b['name']} 2026 - Pricing, Features & Verdict", content)
+    return render_page(f"{a['name']} vs {b['name']} 2026 - Pricing, Features & Verdict", content, path=f"/compare/{a['id']}-{b['id']}/", desc=f"Compare {a['name']} vs {b['name']}: pricing, features, plans, and AI video generation capabilities.")
 
-def render_page(title, content):
+def render_page(title, content, path='/', desc='Compare AI video tool pricing, plans, and features.'):
     nav = render_nav()
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -232,6 +234,12 @@ def render_page(title, content):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
     <meta name="description" content="Compare AI video tool pricing, plans, and features. Independent comparison of HeyGen, Synthesia, Runway, Pika, Sora, and Kling.">
+    <link rel="canonical" href="{SITE_URL}{path}">
+    <meta property="og:title" content="{title}">
+    <meta property="og:description" content="{desc}">
+    <meta property="og:url" content="{SITE_URL}{path}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <style>
         *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0;}}
         body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6;}}
@@ -326,13 +334,27 @@ def main():
             f.write(html)
         print(f"  [OK] compare/{a['id']}-{b['id']}/index.html")
     
+    # SEO: sitemap & robots
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    for path, pri in [("/", "1.0")] + [(f"/{t['id']}/", "0.9") for t in tools] + [(f"/compare/{a['id']}-{b['id']}/", "0.7") for a,b in pairs]:
+        sitemap += f"  <url>\n    <loc>{SITE_URL}{path}</loc>\n    <lastmod>{UPDATED}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>{pri}</priority>\n  </url>\n"
+    sitemap += "</urlset>\n"
+    with open(os.path.join(OUTPUT_DIR, "sitemap.xml"), "w", encoding="utf-8") as f: f.write(sitemap)
+    print("  [OK] sitemap.xml")
+    robots = "User-agent: *\nAllow: /\nSitemap: " + SITE_URL + "/sitemap.xml\n"
+    with open(os.path.join(OUTPUT_DIR, "robots.txt"), "w", encoding="utf-8") as f: f.write(robots)
+    print("  [OK] robots.txt")
+    
     # Summary
     total = 1 + len(tools) + len(pairs)
-    print(f"\n✅ Generated {total} pages:")
+    print(f"\n>> Generated {total + 2} files:")
     print(f"  - 1 index page")
     print(f"  - {len(tools)} tool pages")
     print(f"  - {len(pairs)} comparison pages")
+    print(f"  - 1 sitemap.xml")
+    print(f"  - 1 robots.txt")
     print(f"  Output: {OUTPUT_DIR}")
 
 if __name__ == "__main__":
     main()
+
