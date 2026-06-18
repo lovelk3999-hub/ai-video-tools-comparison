@@ -1396,6 +1396,102 @@
           "date": "Sep 18, 2025"
         }
       ]
+    },
+    {
+      "id": "pixverse",
+      "name": "PixVerse",
+      "url": "https://pixverse.ai",
+      "description": "Advanced AI video generation platform supporting text-to-video, image-to-video, multi-shot narrative, lip-sync, and native audio generation. Known for high ELO scores and competitive API pricing.",
+      "category": "text-to-video",
+      "logo_url": "",
+      "youtube_official": [],
+      "youtube_reviews": [],
+      "plans": [
+        {
+          "name": "Free",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "Limited free credits",
+          "resolution": "720p",
+          "video_length": "Short clips",
+          "features": [
+            "Limited free generations",
+            "720p export",
+            "Watermark",
+            "Community access",
+            "Basic templates"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 10,
+          "price_yearly": 8,
+          "credits": "Monthly credit package",
+          "resolution": "1080p",
+          "video_length": "Up to 15 sec",
+          "features": [
+            "More credits monthly",
+            "1080p export",
+            "No watermark",
+            "Priority processing",
+            "Advanced templates",
+            "API access"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price_monthly": 0,
+          "price_yearly": 0,
+          "credits": "Custom",
+          "resolution": "4K",
+          "video_length": "Custom",
+          "features": [
+            "Custom pricing",
+            "4K export",
+            "Dedicated support",
+            "Custom models",
+            "SLA guarantee",
+            "Volume discounts"
+          ]
+        }
+      ],
+      "features": {
+        "text_to_video": true,
+        "image_to_video": true,
+        "multi_shot": true,
+        "lip_sync": true,
+        "audio_generation": true,
+        "api": true,
+        "template_library": true,
+        "agent_mode": true,
+        "subject_reference": true,
+        "resolution": "4K max",
+        "max_video_length": "15 sec (Pro)",
+        "languages": "Multi-language",
+        "elo_score": "1343 (V6)"
+      },
+      "g2_rating": null,
+      "g2_reviews": null,
+      "reddit_posts": [
+        {
+          "title": "How is PixVerse as a model in actual use? It looks pretty ... - Reddit",
+          "snippet": "PixVerse is a bit more standard, strongly leaning on Text/Image-to-Video and lacking that same video-to-video reference depth. The TL;DR Verdict ...",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1tjp6if/how_is_pixverse_as_a_model_in_actual_use_it_looks/",
+          "date": "May 21, 2026"
+        },
+        {
+          "title": "Hello everyone, what is the best AI video generator here? I tried 15 ...",
+          "snippet": "15.PixVerse, PixVerse, Fast rendering, built-in audio, Fusion & Swap features, Social Media, Quick Content Creation, Free + paid plans, Yes. My ...",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1qrq2ks/hello_everyone_what_is_the_best_ai_video/",
+          "date": "Jan 31, 2026"
+        },
+        {
+          "title": "Ok guys since its hard to find an unlimited AI video generator for free ...",
+          "snippet": "They rip of people for lots of money. Even their highest subscription fees still give you \"limited\" credits. If someone is a creator an needs to ...",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1rzim0a/ok_guys_since_its_hard_to_find_an_unlimited_ai/",
+          "date": "Mar 21, 2026"
+        }
+      ]
     }
   ],
   "categories": {

@@ -1,7 +1,7 @@
 # STATUS - AI Video Tools Comparison
 
 > 上次更新: 2026-06-19
-> 当前任务: 04-refresh-g2-reddit.md
+> 当前任务: 06-new-tools-research.md (Phase 2 - 调研新工具)
 
 ---
 
