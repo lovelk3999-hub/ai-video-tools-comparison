@@ -15,3 +15,26 @@ Thumbs.db
 # Browser profiles
 .kling_browser/
 scripts/.kling_browser/
+# Generated output
+output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Browser profiles
+.kling_browser/
+scripts/.kling_browser/
+
+# Local-only AI working files
+doing/
+done/
+todo/
+DECISIONS.md
