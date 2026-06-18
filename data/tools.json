@@ -255,12 +255,12 @@
           "name": "Free",
           "price_monthly": 0,
           "price_yearly": 0,
-          "credits": "50 credits/mo",
-          "resolution": "720p",
-          "video_length": "3 sec",
+          "credits": "80 credits/mo",
+          "resolution": "480p",
+          "video_length": "5 sec",
           "features": [
-            "50 credits/mo",
-            "720p export",
+            "80 credits/mo",
+            "480p only",
             "Watermark",
             "Basic generation"
           ]
@@ -268,43 +268,44 @@
         {
           "name": "Basic",
           "price_monthly": 10,
-          "price_yearly": null,
-          "credits": "500 credits/mo",
+          "price_yearly": 8,
+          "credits": "700 credits/mo",
           "resolution": "1080p",
           "video_length": "5 sec",
           "features": [
-            "500 credits/mo",
-            "1080p export",
+            "700 credits/mo",
+            "1080p",
             "No watermark",
-            "Commercial use"
+            "Commercial use",
+            "Pika 2.5"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price_monthly": 35,
+          "price_yearly": 28,
+          "credits": "2300 credits/mo",
+          "resolution": "1080p",
+          "video_length": "10 sec",
+          "features": [
+            "2300/mo",
+            "1080p",
+            "Fast gen",
+            "All effects"
           ]
         },
         {
           "name": "Pro",
-          "price_monthly": 35,
-          "price_yearly": null,
-          "credits": "1500 credits/mo",
+          "price_monthly": 95,
+          "price_yearly": 76,
+          "credits": "6000 credits/mo",
           "resolution": "4K",
           "video_length": "10 sec",
           "features": [
-            "1500 credits/mo",
-            "4K export",
-            "Priority queue",
-            "Private videos"
-          ]
-        },
-        {
-          "name": "Enterprise",
-          "price_monthly": null,
-          "price_yearly": null,
-          "credits": "Custom",
-          "resolution": "4K",
-          "video_length": "Custom",
-          "features": [
-            "Custom credits",
-            "API access",
-            "Dedicated support",
-            "Custom models"
+            "6000/mo",
+            "4K",
+            "Fastest",
+            "Priority"
           ]
         }
       ],

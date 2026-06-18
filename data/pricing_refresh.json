@@ -1,0 +1,86 @@
+{
+  "Runway": {
+    "prices": [
+      "$12/mo",
+      "$12/mo",
+      "$12/mo",
+      "$12/mo",
+      "$12/mo",
+      "$12/mo"
+    ],
+    "plans": [
+      "Standard",
+      "Enterprise",
+      "standard",
+      "enterprise",
+      "Free",
+      "free"
+    ]
+  },
+  "HeyGen": {
+    "prices": [
+      "$0/mo",
+      "$0/mo",
+      "$0/mo",
+      "$29/mo",
+      "$24/mo",
+      "$49/mo",
+      "$149/mo",
+      "$0/mo",
+      "$29/mo",
+      "$49/mo"
+    ],
+    "plans": [
+      "Business",
+      "business",
+      "Enterprise",
+      "Creator",
+      "creator",
+      "enterprise"
+    ]
+  },
+  "Pika": {
+    "prices": [
+      "$0",
+      "$8",
+      "$28",
+      "$76",
+      "$1",
+      "$1",
+      "$1",
+      "$6"
+    ],
+    "plans": [
+      "Basic",
+      "Free"
+    ]
+  },
+  "Synthesia": {
+    "prices": [
+      "$14/mo",
+      "$19/mo",
+      "$14/mo",
+      "$89/mo",
+      "$59/mo",
+      "$0/mo",
+      "$14/mo",
+      "$59/mo"
+    ],
+    "plans": [
+      "Personal",
+      "starter",
+      "personal",
+      "Business",
+      "Enterprise",
+      "Creator"
+    ]
+  },
+  "Kling": {
+    "prices": [],
+    "plans": []
+  },
+  "Sora": {
+    "prices": [],
+    "plans": []
+  }
+}
