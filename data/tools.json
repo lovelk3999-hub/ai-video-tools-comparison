@@ -1476,6 +1476,58 @@
     {
       "q": "What is the best AI video tool for social media content?",
       "a": "For short-form social media (TikTok, Reels, Shorts): CapCut, Invideo AI, and Pika excel with ready-made templates. For YouTube content: Runway and Luma offer higher quality. For business social media: HeyGen and Synthesia create professional avatar-based content easily."
+    },
+    {
+      "q": "Do AI video tools add watermarks to free plan videos?",
+      "a": "Most AI video tools add watermarks on free plans. Free plans typically have lower resolution and watermarks."
+    },
+    {
+      "q": "What video resolutions do AI video tools support?",
+      "a": "Most tools support 720p on free plans and up to 1080p or 4K on paid plans. Runway offers up to 4K on Pro plans. Pika supports 1080p on paid tiers."
+    },
+    {
+      "q": "How long can AI-generated videos be?",
+      "a": "Most tools generate 5-60 second clips per generation. Seedance supports up to 1-hour+ video generation. Invideo AI can create full-length videos by chaining clips. Some tools allow frame-by-frame extension for longer content."
+    },
+    {
+      "q": "Do AI video tools support multiple languages?",
+      "a": "Yes, most tools support multi-language prompts and output. HeyGen and Synthesia offer multi-language voiceover and avatar lip-syncing. Chinese tools (Kling, HailuoAI, Vidu) work with English prompts but pricing may be in CNY."
+    },
+    {
+      "q": "Which AI video tool is best for marketing videos?",
+      "a": "HeyGen and Synthesia excel at talking-head marketing videos with realistic avatars. Invideo AI is designed for social media content. Runway and Pika are better for creative cinematic video generation."
+    },
+    {
+      "q": "Can I create custom avatars with AI video tools?",
+      "a": "Yes. HeyGen and Synthesia offer custom avatar creation on higher-tier plans. D-ID specializes in custom avatars from photos. Colossyan also supports custom avatars for enterprise users."
+    },
+    {
+      "q": "What is the refund policy for AI video tools?",
+      "a": "Most tools offer 14-day refund policies on monthly subscriptions. Annual plans may have different terms. Check each tool's refund policy on their official website."
+    },
+    {
+      "q": "Do AI video tools offer team or enterprise plans?",
+      "a": "All major AI video tools offer team/enterprise plans with additional features like custom avatars, priority support, API access, and dedicated account management. Pricing is usually custom-quoted."
+    },
+    {
+      "q": "Can I use AI video tools on mobile devices?",
+      "a": "CapCut has a popular mobile app available on iOS and Android. Pika offers mobile access via web app. Most other tools are primarily web-based with responsive mobile browsers."
+    },
+    {
+      "q": "Which AI video tool is best for educational content?",
+      "a": "Synthesia and Colossyan are popular for educational and training content. HeyGen works well for explainer videos. CapCut is great for quick social media educational clips."
+    },
+    {
+      "q": "How do AI video tool credits work?",
+      "a": "Most tools use a credit system: 1 credit usually equals 1 generation/second of video. Free plans give 5-15 credits/month. Paid plans offer 50-500+ credits/month with rollover options."
+    },
+    {
+      "q": "What is the difference between text-to-video and image-to-video?",
+      "a": "Text-to-video generates video from text prompts. Image-to-video animates, extends, or transforms existing images into video. Both are available in most AI video tools."
+    },
+    {
+      "q": "Do AI video tools support lip-sync for generated characters?",
+      "a": "HeyGen, Synthesia, D-ID, and Colossyan support lip-sync for talking avatars. Runway and Pika offer basic lip-sync in newer versions. Not all tools support this feature."
     }
   ]
 }

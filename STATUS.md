@@ -1,7 +1,7 @@
 # STATUS - AI Video Tools Comparison
 
 > 上次更新: 2026-06-19
-> 当前任务: 01-official-video-pika.md
+> 当前任务: 03-faq-expansion.md
 
 ---
 
@@ -20,16 +20,16 @@ G2评分 + Reddit讨论已集成完毕 | Google Search Console已验证 & sitema
 | 108个页面生成 | ✅ 完成 | 首页 + 14详情页 + 80+对比页 + sitemap + robots |
 | FAQ 17条+JSON-LD | ✅ 完成 | 基础问答 + Schema.org结构化数据 |
 | SEO基础 | ✅ 完成 | OG标签 / sitemap.xml / robots.txt / canonical |
-| 官方视频 | ⚠️ 12/14 | 12/14工具已有YouTube官方视频嵌入 |
+| 官方视频 | ✅ 14/14 | 全部工具已有YouTube官方视频嵌入 |
 | CI/CD自动部署 | ✅ 完成 | GitHub Actions push触发 -> Cloudflare Pages |
 | G2评分采集 | ✅ 完成 | TinyFish API代理采集，12/14工具有数据 |
 | Reddit讨论采集 | ✅ 完成 | TinyFish搜索，每个工具3条Reddit帖子 |
 | G2+Reddit前端展示 | ✅ 完成 | 详情页显示G2评分 + Reddit讨论卡片 |
 | 定价数据自动采集 | ✅ 完成 | Playwright每月定时采集 |
 | Google Search Console | ✅ 已验证 | meta tag验证 + sitemap已提交 |
-| Pika官方视频 | 🔴 当前任务 | 需要找Pika官方YouTube视频 |
-| Vidu官方视频 | ⏳ 待办 | 需要找Vidu官方YouTube视频 |
-| FAQ扩充到30+条 | ⏳ 待办 | 目标扩充到30+条 |
+| Pika官方视频 | ✅ 完成 | Pika 2.0 Scene Ingredients |
+| Vidu官方视频 | ✅ 完成 | Vidu Q3 Suite Upgraded |
+| FAQ扩充到30+条 | 🔴 当前任务 | 目标扩充到30+条 |
 | 新增工具(PixVerse等) | ⏳ 待办 | 调研并收录新工具 |
 
 ---
