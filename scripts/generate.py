@@ -268,6 +268,7 @@ def render_page(title, content, path='/', desc='Compare AI video tool pricing, p
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
     <meta name="description" content="Compare AI video tool pricing, plans, and features. Independent comparison of HeyGen, Synthesia, Runway, Pika, Sora, and Kling.">
+    <meta name="google-site-verification" content="DQrYBDat2T6zXgpndVazrViLHGORb7pIZKze1i67ZR4" />
     {faq_schema}
     <link rel="canonical" href="{SITE_URL}{path}">
     <meta property="og:title" content="{title}">
