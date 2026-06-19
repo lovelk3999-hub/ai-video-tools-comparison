@@ -40,3 +40,7 @@ todo/
 DECISIONS.md
 agent.md
 .codex/skills/
+
+# Internal discussion docs
+方向评估框架.md
+方向评估打分表.md
